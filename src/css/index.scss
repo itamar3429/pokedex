@@ -27,10 +27,13 @@ body {
 					padding: 5px;
 					border: 2px solid darken(rgb(226, 226, 226), 10);
 					border-radius: 5px;
-					&:focus-visible,
+					&:focus-visible {
+						border: 2px solid darken(rgb(226, 226, 226), 25);
+						outline: 1px solid darken(rgb(226, 226, 226), 35);
+					}
 					&:focus-visible ~ #submit {
-						border: 2px solid darken(rgb(226, 226, 226), 25) !important;
-						outline: none;
+						border: 2px solid darken(rgb(226, 226, 226), 25);
+						outline: 1px solid darken(rgb(226, 226, 226), 35);
 					}
 				}
 				#submit {
@@ -52,6 +55,7 @@ body {
 			gap: 70px;
 			flex-wrap: wrap;
 			justify-content: center;
+			margin-bottom: 40px;
 			.pokemon {
 				// flex: 1;
 				min-width: fit-content;

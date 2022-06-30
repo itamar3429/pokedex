@@ -3,6 +3,14 @@ interface IPokemonList {
 	url: string;
 }
 
+export interface IPokemon {
+	name: string;
+	img: string;
+	specie: string;
+	height: number;
+	weight: number;
+}
+
 // Controls the pokemon api to retrieve data and parse it correctly.
 export class Data {
 	// Gets pokemons list and gets info forEach pokemon on the list.
@@ -36,11 +44,28 @@ export class Data {
 	}
 
 	// Gets pokemonArr and returns an array with the fetch promise of each pokemon url
-	static fetchPokemonsFromArray(pokemonArr: any[]) {
+	static fetchPokemonsFromArray(pokemonArr: IPokemonList[]) {
 		return pokemonArr.map((pokemon) => {
+			let localS = localStorage.getItem(pokemon.url) as string;
+			if (localS) return JSON.parse(localS);
 			return fetch(pokemon.url)
 				.then((res) => res.json())
+				.then((data) => {
+					return this.parseData(data, pokemon.url);
+				})
 				.catch(console.log);
 		});
+	}
+
+	static parseData(data: any, url: string) {
+		let p: IPokemon = {
+			name: data.name,
+			img: data?.sprites?.front_default || "",
+			specie: data.types[0].type.name || "",
+			height: Number(data.height) || 0,
+			weight: Number(data.weight) || 0,
+		};
+		localStorage.setItem(url, JSON.stringify(p));
+		return p;
 	}
 }

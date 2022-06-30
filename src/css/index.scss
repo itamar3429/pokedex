@@ -67,6 +67,9 @@ body {
 				.img {
 					margin: auto;
 					width: fit-content;
+					img {
+						width: 128px;
+					}
 				}
 				.info {
 					span {
@@ -75,5 +78,39 @@ body {
 				}
 			}
 		}
+
+		#loader {
+			width: 100%;
+			visibility: hidden;
+
+			&.show {
+				visibility: visible;
+
+				img {
+					animation: rotate 2s linear infinite;
+				}
+			}
+			.img {
+				width: 30px;
+				margin: auto;
+				margin-top: 30px;
+				margin-bottom: 30px;
+
+				img {
+					width: 30px;
+					// margin: auto;
+					// display: block;
+				}
+			}
+		}
+	}
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
 	}
 }

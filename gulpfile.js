@@ -37,6 +37,12 @@ gulp.task('index', () => {
     .pipe(gulp.dest('./dist'));
 });
 
+// Transfers index
+gulp.task('img', () => {
+  return gulp.src(['./src/img/**/*'])
+    .pipe(gulp.dest('./dist/img'));
+});
+
 // Browser Sync
 gulp.task('browser-sync', () => {
   browserSync.init({
@@ -65,6 +71,11 @@ gulp.task('watch-html', () => {
   return gulp.watch('./src/*.html', gulp.series('index'));
 });
 
+// Watch html files
+gulp.task('watch-img', () => {
+  return gulp.watch('./src/img/**/*', gulp.series('img'));
+});
+
 // Watch tsc files
 gulp.task('watch-tsc', () => {
   return gulp.watch('./dist/js/**/*.js', gulp.series('build'));
@@ -87,6 +98,7 @@ gulp.task('default', gulp.series(
   'start',
   'scss',
   'index',
+  'img',
   'tsc',
   'build',
   gulp.parallel(
@@ -94,6 +106,7 @@ gulp.task('default', gulp.series(
     'browser-sync-watch',
     'watch-scss',
     'watch-html',
+    'watch-img',
     'watch-tsc',
     'tsc-w',
   ),

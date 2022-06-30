@@ -45,7 +45,7 @@ class Module {
 	loadMorePokemons() {
 		let time = 1;
 		var lastScrollTop = 0;
-		window.addEventListener("scroll", (e) => {
+		window.addEventListener("scroll", () => {
 			var st = window.pageYOffset || document.documentElement.scrollTop;
 			if (st > lastScrollTop)
 				if (window.innerHeight + window.scrollY >= document.body.scrollHeight) {

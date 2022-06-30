@@ -1,5 +1,5 @@
 import { Pokemons } from "./components/Pokemon";
-import { Data } from "./Data";
+import { Data, IPokemon } from "./Data";
 
 // module to get the page going
 class Module {
@@ -10,11 +10,9 @@ class Module {
 	async load() {
 		localStorage.setItem("pokemons", ""); // remove all pokemons when page first loads
 		this.loader(true);
-
 		this.pokemonList = await Data.getPokemonList(50, this.page);
 		this.render(this.pokemonList, false);
 		this.loader(false);
-
 		this.page = 1;
 	}
 
@@ -23,6 +21,8 @@ class Module {
 		document.getElementById("search-form")?.addEventListener("submit", (e) => {
 			e.preventDefault();
 		});
+
+		// add input listener to load matching pokemons on input writing.
 		let input = document.getElementById("search-input") as HTMLInputElement;
 		input.addEventListener("input", (e) => {
 			e.preventDefault();
@@ -40,7 +40,8 @@ class Module {
 		});
 	}
 
-	render(pokemonList: any[], isAdd: boolean) {
+	// gets a list of pokemons data and renders them to the page
+	render(pokemonList: IPokemon[], isAdd: boolean) {
 		let parent = document.getElementById("list-container") as HTMLDivElement;
 		Pokemons.render(pokemonList, parent, isAdd);
 	}

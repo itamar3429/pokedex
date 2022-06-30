@@ -35,6 +35,7 @@ export class Data {
 		});
 	}
 
+	// Gets a list of pokemon names and url and filters by offset and limit.
 	static getPokemons(limit: number, offset: number) {
 		let pokemonsStorage = localStorage.getItem("pokemons");
 		if (pokemonsStorage)
@@ -47,6 +48,7 @@ export class Data {
 			});
 	}
 
+	// Filters array by offset and limit
 	static async getRange(arr: any[], limit: number, offset: number) {
 		return arr.slice(offset, offset + limit);
 	}
@@ -65,6 +67,7 @@ export class Data {
 		});
 	}
 
+	// Parses the data needed to save in localStorage and returns it.
 	static parseData(data: any, url: string) {
 		let p: IPokemon = {
 			name: data.name,

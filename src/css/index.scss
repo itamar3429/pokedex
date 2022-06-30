@@ -6,6 +6,7 @@
 body {
 	.container {
 		width: 90%;
+		max-width: 1150px;
 		height: fit-content;
 		margin: auto;
 
@@ -45,6 +46,10 @@ body {
 					border-radius: 5px;
 					border: 2px solid darken(rgb(226, 226, 226), 10);
 					cursor: pointer;
+					&:focus {
+						border: 2px solid darken(rgb(226, 226, 226), 25);
+						outline: 1px solid darken(rgb(226, 226, 226), 35);
+					}
 				}
 			}
 		}
@@ -56,9 +61,14 @@ body {
 			flex-wrap: wrap;
 			justify-content: center;
 			margin-bottom: 40px;
+
+			@media only screen and (max-width: 600px) {
+				gap: 30px;
+			}
 			.pokemon {
 				// flex: 1;
-				min-width: fit-content;
+				// min-width: fit-content;
+				width: 150px;
 				padding: 15px 25px;
 				border: 1px solid black;
 				.name {

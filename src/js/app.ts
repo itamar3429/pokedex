@@ -8,6 +8,7 @@ class Module {
 
 	// Loads the first content to the page
 	async load() {
+		localStorage.setItem("pokemons", ""); // remove all pokemons when page first loads
 		this.loader(true);
 
 		this.pokemonList = await Data.getPokemonList(50, this.page);
@@ -19,6 +20,9 @@ class Module {
 
 	// Searches by input on input change
 	addInputListener() {
+		document.getElementById("search-form")?.addEventListener("submit", (e) => {
+			e.preventDefault();
+		});
 		let input = document.getElementById("search-input") as HTMLInputElement;
 		input.addEventListener("input", (e) => {
 			e.preventDefault();

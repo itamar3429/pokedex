@@ -4,11 +4,15 @@
 }
 
 body {
+		background-image: url("https://st2.depositphotos.com/3213441/12022/v/950/depositphotos_120226584-stock-illustration-pokemon-go-pokeball-seamless-texture.jpg");
+	
 	.container {
 		width: 90%;
 		max-width: 1150px;
 		height: fit-content;
 		margin: auto;
+		border-inline: 2px;
+		background: rgba(255, 255, 255, 0.938);
 
 		.main-title {
 			text-align: center;
@@ -54,6 +58,8 @@ body {
 			}
 		}
 
+	
+
 		#list-container {
 			margin-top: 100px;
 			display: flex;
@@ -66,8 +72,6 @@ body {
 				gap: 30px;
 			}
 			.pokemon {
-				// flex: 1;
-				// min-width: fit-content;
 				width: 150px;
 				padding: 15px 25px;
 				border: 1px solid black;
@@ -108,8 +112,6 @@ body {
 
 				img {
 					width: 30px;
-					// margin: auto;
-					// display: block;
 				}
 			}
 		}

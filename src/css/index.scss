@@ -11,8 +11,9 @@ body {
 		max-width: 1150px;
 		height: fit-content;
 		margin: auto;
-		border-inline: 2px;
 		background: rgba(255, 255, 255, 0.938);
+		border-radius: 2px;
+		opacity: 0.9;
 
 		.main-title {
 			text-align: center;

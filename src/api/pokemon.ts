@@ -34,7 +34,7 @@ pokApiRouter.get("/pokemons/:id", (req, res) => {
 			success: true,
 		});
 	} else {
-		res.json({
+		res.status(404).json({
 			success: false,
 			message: "couldn't find the requested pokemon",
 		});

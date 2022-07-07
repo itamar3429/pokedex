@@ -62,9 +62,6 @@ class Module {
 						this.loader(true);
 						time = 0;
 						this.page++;
-						let input = document.getElementById(
-							"search-input"
-						) as HTMLInputElement;
 						let pokemonList = Data.getNext();
 
 						pokemonList

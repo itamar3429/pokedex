@@ -1,5 +1,5 @@
 module.exports = {
-	entry: "./dist/js/app.js",
+	entry: "./dist/public/js/app.js",
 	mode: 'development',
 	output: {
 		library: "app",

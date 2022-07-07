@@ -5,12 +5,12 @@
     "moduleResolution": "node",
     "lib": ["es2020", "DOM"],
     "baseUrl": "./",
-    "outDir": "./dist/js",
-    "rootDir": "./src/js",
+    "outDir": "./dist/",
+    "rootDir": "./src/",
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true
   },
-  "exclude": ["test/*.ts", ]
+  "exclude": ["**/*.test.ts", ]
 }

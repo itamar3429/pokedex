@@ -34,7 +34,11 @@ class Module {
 					})
 					.catch(console.log);
 			} else {
-				this.render(this.pokemonList, false);
+				Data.getPokemonList(50, 1)
+					.then((data) => {
+						this.render(data, false);
+					})
+					.catch(console.log);
 			}
 			this.page = 1;
 		});
@@ -61,12 +65,7 @@ class Module {
 						let input = document.getElementById(
 							"search-input"
 						) as HTMLInputElement;
-						let pokemonList;
-						if (input.value) {
-							pokemonList = Data.getPokemonByName(input.value, 50, this.page);
-						} else {
-							pokemonList = Data.getPokemonList(50, this.page);
-						}
+						let pokemonList = Data.getNext();
 
 						pokemonList
 							.then((data) => {

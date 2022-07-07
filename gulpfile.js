@@ -21,64 +21,58 @@ gulp.task('start', () => {
 // Creates js bundle from several js files
 gulp.task('build', () => {
   return webpack(webpackConfig)
-    .pipe(gulp.dest('./dist'))
+    .pipe(gulp.dest('./dist/public'))
 });
 
 // Converts scss to css
 gulp.task('scss', () => {
-  return gulp.src('./src/css/**/*.scss')
+  return gulp.src('./src/public/css/**/*.scss')
     .pipe(sass())
-    .pipe(gulp.dest('./dist/css/'));
+    .pipe(gulp.dest('./dist/public/css/'));
 });
 
 // Transfers index
 gulp.task('index', () => {
-  return gulp.src(['./src/index.html', './src/favicon.ico'])
-    .pipe(gulp.dest('./dist'));
+  return gulp.src(['./src/public/*.html', './src/public/favicon.ico'])
+    .pipe(gulp.dest('./dist/public'));
 });
+
+// Transfers views
+gulp.task('views', () => {
+  return gulp.src(['./src/views/**/*'])
+    .pipe(gulp.dest('./dist/views'));
+});
+
 
 // Transfers index
 gulp.task('img', () => {
-  return gulp.src(['./src/img/**/*'])
-    .pipe(gulp.dest('./dist/img'));
-});
-
-// Browser Sync
-gulp.task('browser-sync', () => {
-  browserSync.init({
-    browser: 'default',
-    port: 4000,
-    server: {
-      baseDir: './dist'
-    }
-  });
-});
-
-// Browser Sync live reload
-gulp.task('browser-sync-watch', () => {
-  gulp.watch('./dist/css/*.css').on('change', browserSync.reload);
-  gulp.watch('./dist/app.js').on('change', browserSync.reload);
-  gulp.watch('./dist/*.html').on('change', browserSync.reload);
+  return gulp.src(['./src/public/img/**/*'])
+    .pipe(gulp.dest('./dist/public/img'));
 });
 
 // Watch scss files
 gulp.task('watch-scss', () => {
-  return gulp.watch('./src/css/**/*.scss', gulp.series('scss'));
+  return gulp.watch('./src/public/css/**/*.scss', gulp.series('scss'));
 });
 
 // Watch html files
 gulp.task('watch-html', () => {
-  return gulp.watch('./src/*.html', gulp.series('index'));
+  return gulp.watch('./src/public/*.html', gulp.series('index'));
+});
+
+// Watch html files
+gulp.task('watch-views', () => {
+  return gulp.watch('./src/views/**/*', gulp.series('views'));
 });
 
 // Watch html files
 gulp.task('watch-img', () => {
-  return gulp.watch('./src/img/**/*', gulp.series('img'));
+  return gulp.watch('./src/public/img/**/*', gulp.series('img'));
 });
 
 // Watch tsc files
 gulp.task('watch-tsc', () => {
-  return gulp.watch('./dist/js/**/*.js', gulp.series('build'));
+  return gulp.watch('./dist/public/js/**/*.js', gulp.series('build'));
 });
 
 // Initial ts compile
@@ -93,21 +87,28 @@ gulp.task('tsc-w', () => {
   exec('tsc -w');
 });
 
+// start nodemon
+gulp.task('nodemon', () => {
+  exec('nodemon dist/server.js');
+  exec('google-chrome http://localhost:3000');
+});
+
 // Run all together
 gulp.task('default', gulp.series(
   'start',
   'scss',
   'index',
+  'views',
   'img',
   'tsc',
   'build',
   gulp.parallel(
-    'browser-sync',
-    'browser-sync-watch',
     'watch-scss',
     'watch-html',
+    'watch-views',
     'watch-img',
     'watch-tsc',
     'tsc-w',
+    // 'nodemon',
   ),
 ));

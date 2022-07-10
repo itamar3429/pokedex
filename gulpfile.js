@@ -19,7 +19,7 @@ gulp.task('start', () => {
 });
 
 // Creates js bundle from several js files
-gulp.task('build', () => {
+gulp.task('webpack', () => {
   return webpack(webpackConfig)
     .pipe(gulp.dest('./dist/public'))
 });
@@ -72,7 +72,7 @@ gulp.task('watch-img', () => {
 
 // Watch tsc files
 gulp.task('watch-tsc', () => {
-  return gulp.watch('./dist/public/js/**/*.js', gulp.series('build'));
+  return gulp.watch('./dist/public/js/**/*.js', gulp.series('webpack'));
 });
 
 // Initial ts compile
@@ -101,7 +101,7 @@ gulp.task('default', gulp.series(
   'views',
   'img',
   'tsc',
-  'build',
+  'webpack',
   gulp.parallel(
     'watch-scss',
     'watch-html',
@@ -120,5 +120,5 @@ gulp.task('build', gulp.series(
   'views',
   'img',
   'tsc',
-  'build',
+  'webpack',
 ));

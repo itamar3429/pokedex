@@ -11,8 +11,8 @@ pokApiRouter.get("/pokemons", (req, res) => {
 	console.log(req.protocol);
 
 	let next =
-		req.protocol +
-		"://" +
+		// req.protocol +
+		"//" +
 		req.get("host") +
 		`/api/pokemons?offset=${offset + pokemons.length}&limit=${limit}`;
 	let count = data.length;

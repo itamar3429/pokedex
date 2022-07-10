@@ -2,10 +2,11 @@
 
 import * as express from "express";
 import { pokApiRouter } from "./api/pokemon";
-import * as https from "node:https";
 const path = require("path");
 
 const app: express.Application = express();
+
+app.enable("trust proxy");
 
 app.get(["/"], (_, res) => {
 	res.sendFile(path.join(__dirname, "/views/index.html"));
@@ -16,6 +17,6 @@ app.use("/api", pokApiRouter);
 
 const PORT = process.env.PORT || 3000;
 
-https.createServer(app).listen(PORT, () => {
+app.listen(PORT, () => {
 	console.log(`Server is running on port ${PORT}`);
 });

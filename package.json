@@ -4,10 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node dist/server.js",
+    "start": "node script.js && gulp build && node dist/server.js",
     "dev": "nodemon dist/server.js & google-chrome http://localhost:3000 ; fg",
-    "compile": "gulp"
   },
   "keywords": [],
   "author": "",

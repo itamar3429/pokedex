@@ -112,3 +112,13 @@ gulp.task('default', gulp.series(
     // 'nodemon',
   ),
 ));
+
+gulp.task('build', gulp.series(
+  'start',
+  'scss',
+  'index',
+  'views',
+  'img',
+  'tsc',
+  'build',
+));

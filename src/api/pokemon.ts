@@ -8,7 +8,7 @@ pokApiRouter.get("/pokemons", (req, res) => {
 	let offset = Number(req.query.offset) || 0;
 	let limit = Number(req.query.limit) || 50;
 	let pokemons = data.slice(offset, offset + limit);
-	console.log(req.protocol);
+	console.log(process.env.protocol);
 
 	let next =
 		req.protocol +

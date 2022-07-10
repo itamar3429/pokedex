@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node script.js && gulp build && node dist/server.js",
+    "start": "gulp build && node dist/server.js",
     "dev": "nodemon dist/server.js & google-chrome http://localhost:3000 ; fg"
   },
   "keywords": [],

@@ -54,8 +54,8 @@ pokApiRouter.get("/pokemons/name/:name", (req, res) => {
 	pokemons = pokemons.slice(offset, offset + limit);
 
 	let next =
-		req.protocol +
-		"://" +
+		// req.protocol +
+		"//" +
 		req.get("host") +
 		`${req.originalUrl.split("?")[0]}?offset=${
 			offset + pokemons.length

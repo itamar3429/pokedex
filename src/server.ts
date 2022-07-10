@@ -8,6 +8,12 @@ const app: express.Application = express();
 
 app.enable("trust proxy");
 
+app.use((req, _, next) => {
+	console.log(req.socket.remoteAddress);
+	console.log(req.headers["x-forwarded-for"]);
+	next();
+});
+
 app.get(["/"], (_, res) => {
 	res.sendFile(path.join(__dirname, "/views/index.html"));
 });

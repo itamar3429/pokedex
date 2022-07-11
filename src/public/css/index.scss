@@ -3,12 +3,16 @@
 	padding: 0;
 }
 
-$lighBlue:rgb(0, 171, 250);
-$lightGray :#a2a2a2;
+$lighBlue: rgb(0, 171, 250);
+$lightGray: #a2a2a2;
 
-body { 
+body {
 	// background-image: url("https://st2.depositphotos.com/3213441/12022/v/950/depositphotos_120226584-stock-illustration-pokemon-go-pokeball-seamless-texture.jpg");
-	background-image: linear-gradient(to right, rgb(255, 217, 0), rgb(255, 115, 0));
+	background-image: linear-gradient(
+		to right,
+		rgb(255, 217, 0),
+		rgb(255, 115, 0)
+	);
 
 	.container {
 		width: 90%;
@@ -19,9 +23,8 @@ body {
 		// border-radius: 2px;
 		// border-radius: 15px;
 
-
-		#header{
-			img{
+		#header {
+			img {
 				width: 80%;
 				margin: auto;
 				display: block;
@@ -52,7 +55,7 @@ body {
 						border: 2px solid darken($lightGray, 10);
 						// outline: 1px solid darken(rgb(226, 226, 226), 35);
 					}
-					&:focus-visible ~ #submit {			
+					&:focus-visible ~ #submit {
 						border: 2px solid darken($lightGray, 10);
 
 						// outline: 1px solid darken(rgb(226, 226, 226), 35);
@@ -97,13 +100,11 @@ body {
 				box-shadow: 0 0 20px 0 #f1f1f1;
 				transition: transform 0.5s;
 
-				&:hover{
+				&:hover {
 					transform: scale(1.03);
-
 				}
 				.name {
 					text-align: center;
-					
 				}
 				.img {
 					margin: auto;
@@ -113,73 +114,73 @@ body {
 					}
 				}
 				.info {
-					.type{
-						span:last-child{
+					.type {
+						span:last-child {
 							display: inline-block;
 							margin: 0;
 							padding: 5px 8px;
 							margin: 1px;
 							border-radius: 8px;
 							box-shadow: 0 0 10px 0 #f1f1f1;
-							&.grass{
+							&.grass {
 								background-color: rgb(30, 255, 0);
 							}
-							&.fire{
+							&.fire {
 								background-color: rgb(255, 102, 0);
 							}
-							&.water{
+							&.water {
 								background-color: rgb(0, 204, 255);
 							}
-							&.bug{
+							&.bug {
 								background-color: rgb(60, 255, 0);
 							}
-							&.normal{
+							&.normal {
 								background-color: rgb(165, 121, 85);
 							}
-							&.poison{
+							&.poison {
 								background-color: rgb(218, 106, 252);
 							}
-							&.electric{
+							&.electric {
 								background-color: rgb(255, 217, 0);
 							}
-							&.ground{
+							&.ground {
 								background-color: rgb(255, 205, 0);
 							}
-							&.fairy{
+							&.fairy {
 								background-color: #ffc0cb;
 							}
-							&.fighting{
+							&.fighting {
 								background-color: rgb(165, 121, 85);
 							}
-							&.psychic{
+							&.psychic {
 								background-color: rgb(255, 217, 0);
 							}
-							&.rock{
+							&.rock {
 								background-color: #a2a2a2;
 							}
-							&.ghost{
+							&.ghost {
 								background-color: plum;
 							}
-							&.ice{
+							&.ice {
 								background-color: rgb(0, 204, 255);
 							}
-							&.dragon{
+							&.dragon {
 								background-color: rgb(0, 204, 255);
 							}
-							&.dark{
+							&.dark {
 								background-color: rgb(46, 46, 46);
 								color: white;
 							}
-							&.steel{
+							&.steel {
 								background-color: #a2a2a2;
 							}
-							&.flying{
+							&.flying {
 								background-color: rgb(207, 97, 207);
 							}
 						}
 					}
 					span {
-						&:first-child{
+						&:first-child {
 							font-weight: bold;
 						}
 					}

@@ -11,13 +11,15 @@ const {
 } = require('child_process');
 
 const webpackConfig = require('./webpack.config.js');
-const { task } = require('gulp');
+const {
+  task
+} = require('gulp');
 
 // Removes previous dist
 gulp.task('start', () => {
   return gulp.src('./dist', {
-    allowEmpty: true
-  })
+      allowEmpty: true
+    })
     .pipe(clean());
 });
 
@@ -34,23 +36,10 @@ gulp.task('scss', () => {
     .pipe(gulp.dest('./dist/public/css/'));
 });
 
-// Transfers index
-gulp.task('index', () => {
-  return gulp.src(['./src/public/*.html', './src/public/favicon.ico'])
-    .pipe(gulp.dest('./dist/public'));
-});
-
-// Transfers views
-gulp.task('views', () => {
-  return gulp.src(['./src/views/**/*'])
-    .pipe(gulp.dest('./dist/views'));
-});
-
-
-// Transfers index
-gulp.task('img', () => {
-  return gulp.src(['./src/public/img/**/*'])
-    .pipe(gulp.dest('./dist/public/img'));
+// Transfers static files
+gulp.task('static', () => {
+  return gulp.src(['src/**/*', '!src/**/*.ts', '!src/**/*.scss'])
+    .pipe(gulp.dest('./dist/'));
 });
 
 // Watch scss files
@@ -58,23 +47,14 @@ gulp.task('watch-scss', () => {
   return gulp.watch('./src/public/css/**/*.scss', gulp.series('scss'));
 });
 
-// Watch html files
-gulp.task('watch-html', () => {
-  return gulp.watch('./src/public/*.html', gulp.series('index'));
-});
 
-// Watch html files
-gulp.task('watch-views', () => {
-  return gulp.watch('./src/views/**/*', gulp.series('views'));
-});
-
-// Watch html files
-gulp.task('watch-img', () => {
-  return gulp.watch('./src/public/img/**/*', gulp.series('img'));
+// Watch static files
+gulp.task('watch-static', () => {
+  return gulp.watch(['src/**/*', '!src/**/*.ts', '!src/**/*.scss'], gulp.series('static'));
 });
 
 // Watch tsc files
-gulp.task('watch-tsc', () => {
+gulp.task('watch-js', () => {
   return gulp.watch('./dist/public/js/**/*.js', gulp.series('webpack'));
 });
 
@@ -96,21 +76,21 @@ gulp.task('nodemon', () => {
   exec('google-chrome http://localhost:3000');
 });
 
-// Run all together
-gulp.task('default', gulp.series(
+gulp.task('build', gulp.series(
   'start',
   'scss',
-  'index',
-  'views',
-  'img',
+  'static',
   'tsc',
   'webpack',
+))
+
+// Run all together
+gulp.task('default', gulp.series(
+  'build',
   gulp.parallel(
     'watch-scss',
-    'watch-html',
-    'watch-views',
-    'watch-img',
-    'watch-tsc',
+    'watch-static',
+    'watch-js',
     'tsc-w',
     // 'nodemon',
   ),
@@ -118,7 +98,9 @@ gulp.task('default', gulp.series(
 
 
 gulp.task('clean-deploy', () => {
-  return gulp.src(['./deploy/'], { allowEmpty: true })
+  return gulp.src(['./deploy/'], {
+      allowEmpty: true
+    })
     .pipe(clean());
 });
 
@@ -129,10 +111,10 @@ gulp.task('copy-dist-to-deploy', () => {
 
 gulp.task('copy-node-to-deploy', () => {
   return gulp.src([
-    './package.json',
-    './package-lock.json',
-    './Procfile'
-  ])
+      './package.json',
+      './package-lock.json',
+      './Procfile'
+    ])
     .pipe(gulp.dest('./deploy'));
 });
 
@@ -145,13 +127,7 @@ task('deploy-heruku', (cb) => {
 })
 
 gulp.task('deploy', gulp.series(
-  'start',
-  'scss',
-  'index',
-  'views',
-  'img',
-  'tsc',
-  'webpack',
+  'build',
   'clean-deploy',
   'copy-dist-to-deploy',
   'copy-node-to-deploy',

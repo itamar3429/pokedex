@@ -16,8 +16,8 @@ const { task } = require('gulp');
 // Removes previous dist
 gulp.task('start', () => {
   return gulp.src('./dist', {
-      allowEmpty: true
-    })
+    allowEmpty: true
+  })
     .pipe(clean());
 });
 
@@ -118,7 +118,7 @@ gulp.task('default', gulp.series(
 
 
 gulp.task('clean-deploy', () => {
-  return gulp.src(['./deploy/'],{allowEmpty:true})
+  return gulp.src(['./deploy/'], { allowEmpty: true })
     .pipe(clean());
 });
 
@@ -132,19 +132,19 @@ gulp.task('copy-node-to-deploy', () => {
     './package.json',
     './package-lock.json',
     './Procfile'
-])
+  ])
     .pipe(gulp.dest('./deploy'));
 });
 
-task('deploy-heruku',(cb)=>{
+task('deploy-heruku', (cb) => {
   execSync('chmod +x deploy.sh');
-  execFile('./deploy.sh',(err)=>{
+  execFile('./deploy.sh', (err) => {
     console.log(err);
     cb()
   })
 })
 
-gulp.task('build', gulp.series(
+gulp.task('deploy', gulp.series(
   'start',
   'scss',
   'index',

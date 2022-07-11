@@ -5,10 +5,13 @@ const webpack = require('webpack-stream');
 const sass = require('gulp-sass')(require('sass'));
 const browserSync = require('browser-sync').create();
 const {
-  exec
+  exec,
+  execSync,
+  execFile
 } = require('child_process');
 
 const webpackConfig = require('./webpack.config.js');
+const { task } = require('gulp');
 
 // Removes previous dist
 gulp.task('start', () => {
@@ -113,6 +116,34 @@ gulp.task('default', gulp.series(
   ),
 ));
 
+
+gulp.task('clean-deploy', () => {
+  return gulp.src(['./deploy/'],{allowEmpty:true})
+    .pipe(clean());
+});
+
+gulp.task('copy-dist-to-deploy', () => {
+  return gulp.src(['./dist/**/*'])
+    .pipe(gulp.dest('./deploy'));
+});
+
+gulp.task('copy-node-to-deploy', () => {
+  return gulp.src([
+    './package.json',
+    './package-lock.json',
+    './Procfile'
+])
+    .pipe(gulp.dest('./deploy'));
+});
+
+task('deploy-heruku',(cb)=>{
+  execSync('chmod +x deploy.sh');
+  execFile('./deploy.sh',(err)=>{
+    console.log(err);
+    cb()
+  })
+})
+
 gulp.task('build', gulp.series(
   'start',
   'scss',
@@ -121,4 +152,8 @@ gulp.task('build', gulp.series(
   'img',
   'tsc',
   'webpack',
+  'clean-deploy',
+  'copy-dist-to-deploy',
+  'copy-node-to-deploy',
+  'deploy-heruku'
 ));

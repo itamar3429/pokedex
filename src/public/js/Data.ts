@@ -5,7 +5,7 @@
 let next = "";
 export interface IPokemon {
 	name: string;
-	img: string;
+	img: [string, string];
 	specie: string;
 	height: number;
 	weight: number;
@@ -26,7 +26,9 @@ export class Data {
 	// Fetches all the existing pokemons and filters them by name, then fetches the info for the filtered pokemons
 	static getPokemonByName(name: string, limit: number, page: number) {
 		return fetch(
-			`/api/pokemons/name/${name}/?limit=${limit}&offset=${(page - 1) * limit}`
+			`/api/pokemons/name/${encodeURIComponent(name)}/?limit=${limit}&offset=${
+				(page - 1) * limit
+			}`
 		)
 			.then((res) => res.json())
 			.then((data) => {

@@ -1,17 +1,18 @@
 // import { Router } from "express";
 import * as express from "express";
+import { getPokemonsByName, getPokemonsRange } from "../db/mongo";
 import { data } from "../data";
 
 export const pokApiRouter = express.Router();
 
-pokApiRouter.get("/pokemons", (req, res) => {
+pokApiRouter.get("/pokemons", async (req, res) => {
 	let offset = Number(req.query.offset) || 0;
 	let limit = Number(req.query.limit) || 50;
-	let pokemons = data.slice(offset, offset + limit);
-	console.log(req.protocol);
+	// let pokemons = data.slice(offset, offset + limit);
+	let pokemons = await getPokemonsRange(offset, limit);
+	// console.log(req.protocol);
 
 	let next =
-		// req.protocol +
 		"//" +
 		req.get("host") +
 		`/api/pokemons?offset=${offset + pokemons.length}&limit=${limit}`;
@@ -42,29 +43,40 @@ pokApiRouter.get("/pokemons/:id", (req, res) => {
 	}
 });
 
-pokApiRouter.get("/pokemons/name/:name", (req, res) => {
-	let offset = Number(req.query.offset) || 0;
-	let limit = Number(req.query.limit) || 50;
-	let pokemons = data.filter((p) => {
-		return p.name
-			.toLowerCase()
-			.match(new RegExp("^" + req.params.name.toLowerCase()));
-	});
-	let count = pokemons.length;
-	pokemons = pokemons.slice(offset, offset + limit);
+pokApiRouter.get("/pokemons/name/:name", async (req, res) => {
+	try {
+		let offset = Number(req.query.offset) || 0;
+		let limit = Number(req.query.limit) || 50;
 
-	let next =
-		// req.protocol +
-		"//" +
-		req.get("host") +
-		`${req.originalUrl.split("?")[0]}?offset=${
-			offset + pokemons.length
-		}&limit=${limit}`;
+		let response = await getPokemonsByName(
+			req.params.name.toLowerCase(),
+			offset,
+			limit
+		);
+		let pokemons = response.response;
+		let count = response.count;
+		// pokemons = pokemons.slice(offset, offset + limit);
 
-	res.json({
-		results: pokemons,
-		success: !!pokemons.length,
-		next,
-		count,
-	});
+		let next =
+			// req.protocol +
+			"//" +
+			req.get("host") +
+			`${req.originalUrl.split("?")[0]}?offset=${
+				offset + pokemons.length
+			}&limit=${limit}`;
+
+		res.json({
+			results: pokemons,
+			success: !!pokemons.length,
+			next,
+			count,
+		});
+	} catch {
+		res.json({
+			results: [],
+			success: false,
+			next: "",
+			count: 0,
+		});
+	}
 });

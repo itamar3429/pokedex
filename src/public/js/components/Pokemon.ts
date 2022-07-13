@@ -1,19 +1,30 @@
 import { IPokemon } from "../Data";
 
-
 // Renders a given pokemon to its parent.
 class Pokemon {
 	static render(pokemon: IPokemon, parent: HTMLElement) {
 		let div = document.createElement("div");
 		div.classList.add("pokemon");
 
+		let onerror = `(() => {
+			if (this.src != '${pokemon.img[1]}') this.src = '${pokemon.img[1]}';
+			else {
+				this.src = '/img/default.png';
+				this.onerror = null;
+			}
+		})()`;
+
 		div.innerHTML = `
 		<h3 class="name">${pokemon.name}</h3>
 		<div class="img">
-			<img src="${pokemon.img || "./img/default.png"}" alt="${pokemon.name} pokemon">
+			<img src="${pokemon.img[0] || "/img/default.png"}" alt="${
+			pokemon.name
+		} pokemon" onerror="${onerror}">
 		</div>
 		<div class="info">
-			<p class="type"><span>specie: </span><span class="${pokemon.specie}">${pokemon.specie}</span></p>
+			<p class="type"><span>specie: </span><span class="${pokemon.specie}">${
+			pokemon.specie
+		}</span></p>
 			<p class="height"><span>height: </span>${pokemon.height}</p>
 			<p class="weight"><span>weight: </span>${pokemon.weight}</p>
 		</div>

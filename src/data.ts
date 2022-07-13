@@ -7238,7 +7238,7 @@ export const data = [
 		specie: "psychic",
 		height: 17,
 		weight: 608,
-		id: 906,
+		id: 10001,
 	},
 	{
 		name: "deoxys-defense",
@@ -7246,7 +7246,7 @@ export const data = [
 		specie: "psychic",
 		height: 17,
 		weight: 608,
-		id: 907,
+		id: 10002,
 	},
 	{
 		name: "deoxys-speed",
@@ -7254,7 +7254,7 @@ export const data = [
 		specie: "psychic",
 		height: 17,
 		weight: 608,
-		id: 908,
+		id: 10003,
 	},
 	{
 		name: "wormadam-sandy",
@@ -7262,7 +7262,7 @@ export const data = [
 		specie: "bug",
 		height: 5,
 		weight: 65,
-		id: 909,
+		id: 10004,
 	},
 	{
 		name: "wormadam-trash",
@@ -7270,7 +7270,7 @@ export const data = [
 		specie: "bug",
 		height: 5,
 		weight: 65,
-		id: 910,
+		id: 10005,
 	},
 	{
 		name: "shaymin-sky",
@@ -7278,7 +7278,7 @@ export const data = [
 		specie: "grass",
 		height: 4,
 		weight: 52,
-		id: 911,
+		id: 10006,
 	},
 	{
 		name: "giratina-origin",
@@ -7286,7 +7286,7 @@ export const data = [
 		specie: "ghost",
 		height: 69,
 		weight: 6500,
-		id: 912,
+		id: 10007,
 	},
 	{
 		name: "rotom-heat",
@@ -7294,7 +7294,7 @@ export const data = [
 		specie: "electric",
 		height: 3,
 		weight: 3,
-		id: 913,
+		id: 10008,
 	},
 	{
 		name: "rotom-wash",
@@ -7302,7 +7302,7 @@ export const data = [
 		specie: "electric",
 		height: 3,
 		weight: 3,
-		id: 914,
+		id: 10009,
 	},
 	{
 		name: "rotom-frost",
@@ -7310,7 +7310,7 @@ export const data = [
 		specie: "electric",
 		height: 3,
 		weight: 3,
-		id: 915,
+		id: 10010,
 	},
 	{
 		name: "rotom-fan",
@@ -7318,7 +7318,7 @@ export const data = [
 		specie: "electric",
 		height: 3,
 		weight: 3,
-		id: 916,
+		id: 10011,
 	},
 	{
 		name: "rotom-mow",
@@ -7326,7 +7326,7 @@ export const data = [
 		specie: "electric",
 		height: 3,
 		weight: 3,
-		id: 917,
+		id: 10012,
 	},
 	{
 		name: "castform-sunny",
@@ -7334,7 +7334,7 @@ export const data = [
 		specie: "fire",
 		height: 3,
 		weight: 8,
-		id: 918,
+		id: 10013,
 	},
 	{
 		name: "castform-rainy",
@@ -7342,7 +7342,7 @@ export const data = [
 		specie: "water",
 		height: 3,
 		weight: 8,
-		id: 919,
+		id: 10014,
 	},
 	{
 		name: "castform-snowy",
@@ -7350,7 +7350,7 @@ export const data = [
 		specie: "ice",
 		height: 3,
 		weight: 8,
-		id: 920,
+		id: 10015,
 	},
 	{
 		name: "basculin-blue-striped",
@@ -7358,7 +7358,7 @@ export const data = [
 		specie: "water",
 		height: 10,
 		weight: 180,
-		id: 921,
+		id: 10016,
 	},
 	{
 		name: "darmanitan-zen",
@@ -7366,7 +7366,7 @@ export const data = [
 		specie: "fire",
 		height: 13,
 		weight: 929,
-		id: 922,
+		id: 10017,
 	},
 	{
 		name: "meloetta-pirouette",
@@ -7374,7 +7374,7 @@ export const data = [
 		specie: "normal",
 		height: 6,
 		weight: 65,
-		id: 923,
+		id: 10018,
 	},
 	{
 		name: "tornadus-therian",
@@ -7382,7 +7382,7 @@ export const data = [
 		specie: "flying",
 		height: 14,
 		weight: 630,
-		id: 924,
+		id: 10019,
 	},
 	{
 		name: "thundurus-therian",
@@ -7390,7 +7390,7 @@ export const data = [
 		specie: "electric",
 		height: 30,
 		weight: 610,
-		id: 925,
+		id: 10020,
 	},
 	{
 		name: "landorus-therian",
@@ -7398,7 +7398,7 @@ export const data = [
 		specie: "ground",
 		height: 13,
 		weight: 680,
-		id: 926,
+		id: 10021,
 	},
 	{
 		name: "kyurem-black",
@@ -7406,7 +7406,7 @@ export const data = [
 		specie: "dragon",
 		height: 33,
 		weight: 3250,
-		id: 927,
+		id: 10022,
 	},
 	{
 		name: "kyurem-white",
@@ -7414,7 +7414,7 @@ export const data = [
 		specie: "dragon",
 		height: 36,
 		weight: 3250,
-		id: 928,
+		id: 10023,
 	},
 	{
 		name: "keldeo-resolute",
@@ -7422,7 +7422,7 @@ export const data = [
 		specie: "water",
 		height: 14,
 		weight: 485,
-		id: 929,
+		id: 10024,
 	},
 	{
 		name: "meowstic-female",
@@ -7430,7 +7430,7 @@ export const data = [
 		specie: "psychic",
 		height: 6,
 		weight: 85,
-		id: 930,
+		id: 10025,
 	},
 	{
 		name: "aegislash-blade",
@@ -7438,7 +7438,7 @@ export const data = [
 		specie: "steel",
 		height: 17,
 		weight: 530,
-		id: 931,
+		id: 10026,
 	},
 	{
 		name: "pumpkaboo-small",
@@ -7446,7 +7446,7 @@ export const data = [
 		specie: "ghost",
 		height: 3,
 		weight: 35,
-		id: 932,
+		id: 10027,
 	},
 	{
 		name: "pumpkaboo-large",
@@ -7454,7 +7454,7 @@ export const data = [
 		specie: "ghost",
 		height: 5,
 		weight: 75,
-		id: 933,
+		id: 10028,
 	},
 	{
 		name: "pumpkaboo-super",
@@ -7462,7 +7462,7 @@ export const data = [
 		specie: "ghost",
 		height: 8,
 		weight: 150,
-		id: 934,
+		id: 10029,
 	},
 	{
 		name: "gourgeist-small",
@@ -7470,7 +7470,7 @@ export const data = [
 		specie: "ghost",
 		height: 7,
 		weight: 95,
-		id: 935,
+		id: 10030,
 	},
 	{
 		name: "gourgeist-large",
@@ -7478,7 +7478,7 @@ export const data = [
 		specie: "ghost",
 		height: 11,
 		weight: 140,
-		id: 936,
+		id: 10031,
 	},
 	{
 		name: "gourgeist-super",
@@ -7486,7 +7486,7 @@ export const data = [
 		specie: "ghost",
 		height: 17,
 		weight: 390,
-		id: 937,
+		id: 10032,
 	},
 	{
 		name: "venusaur-mega",
@@ -7494,7 +7494,7 @@ export const data = [
 		specie: "grass",
 		height: 24,
 		weight: 1555,
-		id: 938,
+		id: 10033,
 	},
 	{
 		name: "charizard-mega-x",
@@ -7502,7 +7502,7 @@ export const data = [
 		specie: "fire",
 		height: 17,
 		weight: 1105,
-		id: 939,
+		id: 10034,
 	},
 	{
 		name: "charizard-mega-y",
@@ -7510,7 +7510,7 @@ export const data = [
 		specie: "fire",
 		height: 17,
 		weight: 1005,
-		id: 940,
+		id: 10035,
 	},
 	{
 		name: "blastoise-mega",
@@ -7518,7 +7518,7 @@ export const data = [
 		specie: "water",
 		height: 16,
 		weight: 1011,
-		id: 941,
+		id: 10036,
 	},
 	{
 		name: "alakazam-mega",
@@ -7526,7 +7526,7 @@ export const data = [
 		specie: "psychic",
 		height: 12,
 		weight: 480,
-		id: 942,
+		id: 10037,
 	},
 	{
 		name: "gengar-mega",
@@ -7534,7 +7534,7 @@ export const data = [
 		specie: "ghost",
 		height: 14,
 		weight: 405,
-		id: 943,
+		id: 10038,
 	},
 	{
 		name: "kangaskhan-mega",
@@ -7542,7 +7542,7 @@ export const data = [
 		specie: "normal",
 		height: 22,
 		weight: 1000,
-		id: 944,
+		id: 10039,
 	},
 	{
 		name: "pinsir-mega",
@@ -7550,7 +7550,7 @@ export const data = [
 		specie: "bug",
 		height: 17,
 		weight: 590,
-		id: 945,
+		id: 10040,
 	},
 	{
 		name: "gyarados-mega",
@@ -7558,7 +7558,7 @@ export const data = [
 		specie: "water",
 		height: 65,
 		weight: 3050,
-		id: 946,
+		id: 10041,
 	},
 	{
 		name: "aerodactyl-mega",
@@ -7566,7 +7566,7 @@ export const data = [
 		specie: "rock",
 		height: 21,
 		weight: 790,
-		id: 947,
+		id: 10042,
 	},
 	{
 		name: "mewtwo-mega-x",
@@ -7574,7 +7574,7 @@ export const data = [
 		specie: "psychic",
 		height: 23,
 		weight: 1270,
-		id: 948,
+		id: 10043,
 	},
 	{
 		name: "mewtwo-mega-y",
@@ -7582,7 +7582,7 @@ export const data = [
 		specie: "psychic",
 		height: 15,
 		weight: 330,
-		id: 949,
+		id: 10044,
 	},
 	{
 		name: "ampharos-mega",
@@ -7590,7 +7590,7 @@ export const data = [
 		specie: "electric",
 		height: 14,
 		weight: 615,
-		id: 950,
+		id: 10045,
 	},
 	{
 		name: "scizor-mega",
@@ -7598,7 +7598,7 @@ export const data = [
 		specie: "bug",
 		height: 20,
 		weight: 1250,
-		id: 951,
+		id: 10046,
 	},
 	{
 		name: "heracross-mega",
@@ -7606,7 +7606,7 @@ export const data = [
 		specie: "bug",
 		height: 17,
 		weight: 625,
-		id: 952,
+		id: 10047,
 	},
 	{
 		name: "houndoom-mega",
@@ -7614,7 +7614,7 @@ export const data = [
 		specie: "dark",
 		height: 19,
 		weight: 495,
-		id: 953,
+		id: 10048,
 	},
 	{
 		name: "tyranitar-mega",
@@ -7622,7 +7622,7 @@ export const data = [
 		specie: "rock",
 		height: 25,
 		weight: 2550,
-		id: 954,
+		id: 10049,
 	},
 	{
 		name: "blaziken-mega",
@@ -7630,7 +7630,7 @@ export const data = [
 		specie: "fire",
 		height: 19,
 		weight: 520,
-		id: 955,
+		id: 10050,
 	},
 	{
 		name: "gardevoir-mega",
@@ -7638,7 +7638,7 @@ export const data = [
 		specie: "psychic",
 		height: 16,
 		weight: 484,
-		id: 956,
+		id: 10051,
 	},
 	{
 		name: "mawile-mega",
@@ -7646,7 +7646,7 @@ export const data = [
 		specie: "steel",
 		height: 10,
 		weight: 235,
-		id: 957,
+		id: 10052,
 	},
 	{
 		name: "aggron-mega",
@@ -7654,7 +7654,7 @@ export const data = [
 		specie: "steel",
 		height: 22,
 		weight: 3950,
-		id: 958,
+		id: 10053,
 	},
 	{
 		name: "medicham-mega",
@@ -7662,7 +7662,7 @@ export const data = [
 		specie: "fighting",
 		height: 13,
 		weight: 315,
-		id: 959,
+		id: 10054,
 	},
 	{
 		name: "manectric-mega",
@@ -7670,7 +7670,7 @@ export const data = [
 		specie: "electric",
 		height: 18,
 		weight: 440,
-		id: 960,
+		id: 10055,
 	},
 	{
 		name: "banette-mega",
@@ -7678,7 +7678,7 @@ export const data = [
 		specie: "ghost",
 		height: 12,
 		weight: 130,
-		id: 961,
+		id: 10056,
 	},
 	{
 		name: "absol-mega",
@@ -7686,7 +7686,7 @@ export const data = [
 		specie: "dark",
 		height: 12,
 		weight: 490,
-		id: 962,
+		id: 10057,
 	},
 	{
 		name: "garchomp-mega",
@@ -7694,7 +7694,7 @@ export const data = [
 		specie: "dragon",
 		height: 19,
 		weight: 950,
-		id: 963,
+		id: 10058,
 	},
 	{
 		name: "lucario-mega",
@@ -7702,7 +7702,7 @@ export const data = [
 		specie: "fighting",
 		height: 13,
 		weight: 575,
-		id: 964,
+		id: 10059,
 	},
 	{
 		name: "abomasnow-mega",
@@ -7710,7 +7710,7 @@ export const data = [
 		specie: "grass",
 		height: 27,
 		weight: 1850,
-		id: 965,
+		id: 10060,
 	},
 	{
 		name: "floette-eternal",
@@ -7718,7 +7718,7 @@ export const data = [
 		specie: "fairy",
 		height: 2,
 		weight: 9,
-		id: 966,
+		id: 10061,
 	},
 	{
 		name: "latias-mega",
@@ -7726,7 +7726,7 @@ export const data = [
 		specie: "dragon",
 		height: 18,
 		weight: 520,
-		id: 967,
+		id: 10062,
 	},
 	{
 		name: "latios-mega",
@@ -7734,7 +7734,7 @@ export const data = [
 		specie: "dragon",
 		height: 23,
 		weight: 700,
-		id: 968,
+		id: 10063,
 	},
 	{
 		name: "swampert-mega",
@@ -7742,7 +7742,7 @@ export const data = [
 		specie: "water",
 		height: 19,
 		weight: 1020,
-		id: 969,
+		id: 10064,
 	},
 	{
 		name: "sceptile-mega",
@@ -7750,7 +7750,7 @@ export const data = [
 		specie: "grass",
 		height: 19,
 		weight: 552,
-		id: 970,
+		id: 10065,
 	},
 	{
 		name: "sableye-mega",
@@ -7758,7 +7758,7 @@ export const data = [
 		specie: "dark",
 		height: 5,
 		weight: 1610,
-		id: 971,
+		id: 10066,
 	},
 	{
 		name: "altaria-mega",
@@ -7766,7 +7766,7 @@ export const data = [
 		specie: "dragon",
 		height: 15,
 		weight: 206,
-		id: 972,
+		id: 10067,
 	},
 	{
 		name: "gallade-mega",
@@ -7774,7 +7774,7 @@ export const data = [
 		specie: "psychic",
 		height: 16,
 		weight: 564,
-		id: 973,
+		id: 10068,
 	},
 	{
 		name: "audino-mega",
@@ -7782,7 +7782,7 @@ export const data = [
 		specie: "normal",
 		height: 15,
 		weight: 320,
-		id: 974,
+		id: 10069,
 	},
 	{
 		name: "sharpedo-mega",
@@ -7790,7 +7790,7 @@ export const data = [
 		specie: "water",
 		height: 25,
 		weight: 1303,
-		id: 975,
+		id: 10070,
 	},
 	{
 		name: "slowbro-mega",
@@ -7798,7 +7798,7 @@ export const data = [
 		specie: "water",
 		height: 20,
 		weight: 1200,
-		id: 976,
+		id: 10071,
 	},
 	{
 		name: "steelix-mega",
@@ -7806,7 +7806,7 @@ export const data = [
 		specie: "steel",
 		height: 105,
 		weight: 7400,
-		id: 977,
+		id: 10072,
 	},
 	{
 		name: "pidgeot-mega",
@@ -7814,7 +7814,7 @@ export const data = [
 		specie: "normal",
 		height: 22,
 		weight: 505,
-		id: 978,
+		id: 10073,
 	},
 	{
 		name: "glalie-mega",
@@ -7822,7 +7822,7 @@ export const data = [
 		specie: "ice",
 		height: 21,
 		weight: 3502,
-		id: 979,
+		id: 10074,
 	},
 	{
 		name: "diancie-mega",
@@ -7830,7 +7830,7 @@ export const data = [
 		specie: "rock",
 		height: 11,
 		weight: 278,
-		id: 980,
+		id: 10075,
 	},
 	{
 		name: "metagross-mega",
@@ -7838,7 +7838,7 @@ export const data = [
 		specie: "steel",
 		height: 25,
 		weight: 9429,
-		id: 981,
+		id: 10076,
 	},
 	{
 		name: "kyogre-primal",
@@ -7846,7 +7846,7 @@ export const data = [
 		specie: "water",
 		height: 98,
 		weight: 4300,
-		id: 982,
+		id: 10077,
 	},
 	{
 		name: "groudon-primal",
@@ -7854,7 +7854,7 @@ export const data = [
 		specie: "ground",
 		height: 50,
 		weight: 9997,
-		id: 983,
+		id: 10078,
 	},
 	{
 		name: "rayquaza-mega",
@@ -7862,7 +7862,7 @@ export const data = [
 		specie: "dragon",
 		height: 108,
 		weight: 3920,
-		id: 984,
+		id: 10079,
 	},
 	{
 		name: "pikachu-rock-star",
@@ -7870,7 +7870,7 @@ export const data = [
 		specie: "electric",
 		height: 4,
 		weight: 60,
-		id: 985,
+		id: 10080,
 	},
 	{
 		name: "pikachu-belle",
@@ -7878,7 +7878,7 @@ export const data = [
 		specie: "electric",
 		height: 4,
 		weight: 60,
-		id: 986,
+		id: 10081,
 	},
 	{
 		name: "pikachu-pop-star",
@@ -7886,7 +7886,7 @@ export const data = [
 		specie: "electric",
 		height: 4,
 		weight: 60,
-		id: 987,
+		id: 10082,
 	},
 	{
 		name: "pikachu-phd",
@@ -7894,7 +7894,7 @@ export const data = [
 		specie: "electric",
 		height: 4,
 		weight: 60,
-		id: 988,
+		id: 10083,
 	},
 	{
 		name: "pikachu-libre",
@@ -7902,7 +7902,7 @@ export const data = [
 		specie: "electric",
 		height: 4,
 		weight: 60,
-		id: 989,
+		id: 10084,
 	},
 	{
 		name: "pikachu-cosplay",
@@ -7910,7 +7910,7 @@ export const data = [
 		specie: "electric",
 		height: 4,
 		weight: 60,
-		id: 990,
+		id: 10085,
 	},
 	{
 		name: "hoopa-unbound",
@@ -7918,7 +7918,7 @@ export const data = [
 		specie: "psychic",
 		height: 65,
 		weight: 4900,
-		id: 991,
+		id: 10086,
 	},
 	{
 		name: "camerupt-mega",
@@ -7926,7 +7926,7 @@ export const data = [
 		specie: "fire",
 		height: 25,
 		weight: 3205,
-		id: 992,
+		id: 10087,
 	},
 	{
 		name: "lopunny-mega",
@@ -7934,7 +7934,7 @@ export const data = [
 		specie: "normal",
 		height: 13,
 		weight: 283,
-		id: 993,
+		id: 10088,
 	},
 	{
 		name: "salamence-mega",
@@ -7942,7 +7942,7 @@ export const data = [
 		specie: "dragon",
 		height: 18,
 		weight: 1126,
-		id: 994,
+		id: 10089,
 	},
 	{
 		name: "beedrill-mega",
@@ -7950,7 +7950,7 @@ export const data = [
 		specie: "bug",
 		height: 14,
 		weight: 405,
-		id: 995,
+		id: 10090,
 	},
 	{
 		name: "rattata-alola",
@@ -7958,7 +7958,7 @@ export const data = [
 		specie: "dark",
 		height: 3,
 		weight: 38,
-		id: 996,
+		id: 10091,
 	},
 	{
 		name: "raticate-alola",
@@ -7966,7 +7966,7 @@ export const data = [
 		specie: "dark",
 		height: 7,
 		weight: 255,
-		id: 997,
+		id: 10092,
 	},
 	{
 		name: "raticate-totem-alola",
@@ -7974,7 +7974,7 @@ export const data = [
 		specie: "dark",
 		height: 14,
 		weight: 1050,
-		id: 998,
+		id: 10093,
 	},
 	{
 		name: "pikachu-original-cap",
@@ -7982,7 +7982,7 @@ export const data = [
 		specie: "electric",
 		height: 4,
 		weight: 60,
-		id: 999,
+		id: 10094,
 	},
 	{
 		name: "pikachu-hoenn-cap",
@@ -7990,7 +7990,7 @@ export const data = [
 		specie: "electric",
 		height: 4,
 		weight: 60,
-		id: 1000,
+		id: 10095,
 	},
 	{
 		name: "pikachu-sinnoh-cap",
@@ -7998,7 +7998,7 @@ export const data = [
 		specie: "electric",
 		height: 4,
 		weight: 60,
-		id: 1001,
+		id: 10096,
 	},
 	{
 		name: "pikachu-unova-cap",
@@ -8006,7 +8006,7 @@ export const data = [
 		specie: "electric",
 		height: 4,
 		weight: 60,
-		id: 1002,
+		id: 10097,
 	},
 	{
 		name: "pikachu-kalos-cap",
@@ -8014,7 +8014,7 @@ export const data = [
 		specie: "electric",
 		height: 4,
 		weight: 60,
-		id: 1003,
+		id: 10098,
 	},
 	{
 		name: "pikachu-alola-cap",
@@ -8022,7 +8022,7 @@ export const data = [
 		specie: "electric",
 		height: 4,
 		weight: 60,
-		id: 1004,
+		id: 10099,
 	},
 	{
 		name: "raichu-alola",
@@ -8030,7 +8030,7 @@ export const data = [
 		specie: "electric",
 		height: 7,
 		weight: 210,
-		id: 1005,
+		id: 10100,
 	},
 	{
 		name: "sandshrew-alola",
@@ -8038,7 +8038,7 @@ export const data = [
 		specie: "ice",
 		height: 7,
 		weight: 400,
-		id: 1006,
+		id: 10101,
 	},
 	{
 		name: "sandslash-alola",
@@ -8046,7 +8046,7 @@ export const data = [
 		specie: "ice",
 		height: 12,
 		weight: 550,
-		id: 1007,
+		id: 10102,
 	},
 	{
 		name: "vulpix-alola",
@@ -8054,7 +8054,7 @@ export const data = [
 		specie: "ice",
 		height: 6,
 		weight: 99,
-		id: 1008,
+		id: 10103,
 	},
 	{
 		name: "ninetales-alola",
@@ -8062,7 +8062,7 @@ export const data = [
 		specie: "ice",
 		height: 11,
 		weight: 199,
-		id: 1009,
+		id: 10104,
 	},
 	{
 		name: "diglett-alola",
@@ -8070,7 +8070,7 @@ export const data = [
 		specie: "ground",
 		height: 2,
 		weight: 10,
-		id: 1010,
+		id: 10105,
 	},
 	{
 		name: "dugtrio-alola",
@@ -8078,7 +8078,7 @@ export const data = [
 		specie: "ground",
 		height: 7,
 		weight: 666,
-		id: 1011,
+		id: 10106,
 	},
 	{
 		name: "meowth-alola",
@@ -8086,7 +8086,7 @@ export const data = [
 		specie: "dark",
 		height: 4,
 		weight: 42,
-		id: 1012,
+		id: 10107,
 	},
 	{
 		name: "persian-alola",
@@ -8094,7 +8094,7 @@ export const data = [
 		specie: "dark",
 		height: 11,
 		weight: 330,
-		id: 1013,
+		id: 10108,
 	},
 	{
 		name: "geodude-alola",
@@ -8102,7 +8102,7 @@ export const data = [
 		specie: "rock",
 		height: 4,
 		weight: 203,
-		id: 1014,
+		id: 10109,
 	},
 	{
 		name: "graveler-alola",
@@ -8110,7 +8110,7 @@ export const data = [
 		specie: "rock",
 		height: 10,
 		weight: 1100,
-		id: 1015,
+		id: 10110,
 	},
 	{
 		name: "golem-alola",
@@ -8118,7 +8118,7 @@ export const data = [
 		specie: "rock",
 		height: 17,
 		weight: 3160,
-		id: 1016,
+		id: 10111,
 	},
 	{
 		name: "grimer-alola",
@@ -8126,7 +8126,7 @@ export const data = [
 		specie: "poison",
 		height: 7,
 		weight: 420,
-		id: 1017,
+		id: 10112,
 	},
 	{
 		name: "muk-alola",
@@ -8134,7 +8134,7 @@ export const data = [
 		specie: "poison",
 		height: 10,
 		weight: 520,
-		id: 1018,
+		id: 10113,
 	},
 	{
 		name: "exeggutor-alola",
@@ -8142,7 +8142,7 @@ export const data = [
 		specie: "grass",
 		height: 109,
 		weight: 4156,
-		id: 1019,
+		id: 10114,
 	},
 	{
 		name: "marowak-alola",
@@ -8150,7 +8150,7 @@ export const data = [
 		specie: "fire",
 		height: 10,
 		weight: 340,
-		id: 1020,
+		id: 10115,
 	},
 	{
 		name: "greninja-battle-bond",
@@ -8158,7 +8158,7 @@ export const data = [
 		specie: "water",
 		height: 15,
 		weight: 400,
-		id: 1021,
+		id: 10116,
 	},
 	{
 		name: "greninja-ash",
@@ -8166,7 +8166,7 @@ export const data = [
 		specie: "water",
 		height: 15,
 		weight: 400,
-		id: 1022,
+		id: 10117,
 	},
 	{
 		name: "zygarde-10-power-construct",
@@ -8174,7 +8174,7 @@ export const data = [
 		specie: "dragon",
 		height: 12,
 		weight: 335,
-		id: 1023,
+		id: 10118,
 	},
 	{
 		name: "zygarde-50-power-construct",
@@ -8182,7 +8182,7 @@ export const data = [
 		specie: "dragon",
 		height: 50,
 		weight: 3050,
-		id: 1024,
+		id: 10119,
 	},
 	{
 		name: "zygarde-complete",
@@ -8190,7 +8190,7 @@ export const data = [
 		specie: "dragon",
 		height: 45,
 		weight: 6100,
-		id: 1025,
+		id: 10120,
 	},
 	{
 		name: "gumshoos-totem",
@@ -8198,7 +8198,7 @@ export const data = [
 		specie: "normal",
 		height: 14,
 		weight: 600,
-		id: 1026,
+		id: 10121,
 	},
 	{
 		name: "vikavolt-totem",
@@ -8206,7 +8206,7 @@ export const data = [
 		specie: "bug",
 		height: 26,
 		weight: 1475,
-		id: 1027,
+		id: 10122,
 	},
 	{
 		name: "oricorio-pom-pom",
@@ -8214,7 +8214,7 @@ export const data = [
 		specie: "electric",
 		height: 6,
 		weight: 34,
-		id: 1028,
+		id: 10123,
 	},
 	{
 		name: "oricorio-pau",
@@ -8222,7 +8222,7 @@ export const data = [
 		specie: "psychic",
 		height: 6,
 		weight: 34,
-		id: 1029,
+		id: 10124,
 	},
 	{
 		name: "oricorio-sensu",
@@ -8230,7 +8230,7 @@ export const data = [
 		specie: "ghost",
 		height: 6,
 		weight: 34,
-		id: 1030,
+		id: 10125,
 	},
 	{
 		name: "lycanroc-midnight",
@@ -8238,7 +8238,7 @@ export const data = [
 		specie: "rock",
 		height: 11,
 		weight: 250,
-		id: 1031,
+		id: 10126,
 	},
 	{
 		name: "wishiwashi-school",
@@ -8246,7 +8246,7 @@ export const data = [
 		specie: "water",
 		height: 82,
 		weight: 786,
-		id: 1032,
+		id: 10127,
 	},
 	{
 		name: "lurantis-totem",
@@ -8254,7 +8254,7 @@ export const data = [
 		specie: "grass",
 		height: 15,
 		weight: 580,
-		id: 1033,
+		id: 10128,
 	},
 	{
 		name: "salazzle-totem",
@@ -8262,7 +8262,7 @@ export const data = [
 		specie: "poison",
 		height: 21,
 		weight: 810,
-		id: 1034,
+		id: 10129,
 	},
 	{
 		name: "minior-orange-meteor",
@@ -8270,7 +8270,7 @@ export const data = [
 		specie: "rock",
 		height: 3,
 		weight: 400,
-		id: 1035,
+		id: 10130,
 	},
 	{
 		name: "minior-yellow-meteor",
@@ -8278,7 +8278,7 @@ export const data = [
 		specie: "rock",
 		height: 3,
 		weight: 400,
-		id: 1036,
+		id: 10131,
 	},
 	{
 		name: "minior-green-meteor",
@@ -8286,7 +8286,7 @@ export const data = [
 		specie: "rock",
 		height: 3,
 		weight: 400,
-		id: 1037,
+		id: 10132,
 	},
 	{
 		name: "minior-blue-meteor",
@@ -8294,7 +8294,7 @@ export const data = [
 		specie: "rock",
 		height: 3,
 		weight: 400,
-		id: 1038,
+		id: 10133,
 	},
 	{
 		name: "minior-indigo-meteor",
@@ -8302,7 +8302,7 @@ export const data = [
 		specie: "rock",
 		height: 3,
 		weight: 400,
-		id: 1039,
+		id: 10134,
 	},
 	{
 		name: "minior-violet-meteor",
@@ -8310,7 +8310,7 @@ export const data = [
 		specie: "rock",
 		height: 3,
 		weight: 400,
-		id: 1040,
+		id: 10135,
 	},
 	{
 		name: "minior-red",
@@ -8318,7 +8318,7 @@ export const data = [
 		specie: "rock",
 		height: 3,
 		weight: 3,
-		id: 1041,
+		id: 10136,
 	},
 	{
 		name: "minior-orange",
@@ -8326,7 +8326,7 @@ export const data = [
 		specie: "rock",
 		height: 3,
 		weight: 3,
-		id: 1042,
+		id: 10137,
 	},
 	{
 		name: "minior-yellow",
@@ -8334,7 +8334,7 @@ export const data = [
 		specie: "rock",
 		height: 3,
 		weight: 3,
-		id: 1043,
+		id: 10138,
 	},
 	{
 		name: "minior-green",
@@ -8342,7 +8342,7 @@ export const data = [
 		specie: "rock",
 		height: 3,
 		weight: 3,
-		id: 1044,
+		id: 10139,
 	},
 	{
 		name: "minior-blue",
@@ -8350,7 +8350,7 @@ export const data = [
 		specie: "rock",
 		height: 3,
 		weight: 3,
-		id: 1045,
+		id: 10140,
 	},
 	{
 		name: "minior-indigo",
@@ -8358,7 +8358,7 @@ export const data = [
 		specie: "rock",
 		height: 3,
 		weight: 3,
-		id: 1046,
+		id: 10141,
 	},
 	{
 		name: "minior-violet",
@@ -8366,7 +8366,7 @@ export const data = [
 		specie: "rock",
 		height: 3,
 		weight: 3,
-		id: 1047,
+		id: 10142,
 	},
 	{
 		name: "mimikyu-busted",
@@ -8374,7 +8374,7 @@ export const data = [
 		specie: "ghost",
 		height: 2,
 		weight: 7,
-		id: 1048,
+		id: 10143,
 	},
 	{
 		name: "mimikyu-totem-disguised",
@@ -8382,7 +8382,7 @@ export const data = [
 		specie: "ghost",
 		height: 4,
 		weight: 28,
-		id: 1049,
+		id: 10144,
 	},
 	{
 		name: "mimikyu-totem-busted",
@@ -8390,7 +8390,7 @@ export const data = [
 		specie: "ghost",
 		height: 4,
 		weight: 28,
-		id: 1050,
+		id: 10145,
 	},
 	{
 		name: "kommo-o-totem",
@@ -8398,7 +8398,7 @@ export const data = [
 		specie: "dragon",
 		height: 24,
 		weight: 2075,
-		id: 1051,
+		id: 10146,
 	},
 	{
 		name: "magearna-original",
@@ -8406,7 +8406,7 @@ export const data = [
 		specie: "steel",
 		height: 10,
 		weight: 805,
-		id: 1052,
+		id: 10147,
 	},
 	{
 		name: "pikachu-partner-cap",
@@ -8414,7 +8414,7 @@ export const data = [
 		specie: "electric",
 		height: 4,
 		weight: 60,
-		id: 1053,
+		id: 10148,
 	},
 	{
 		name: "marowak-totem",
@@ -8422,7 +8422,7 @@ export const data = [
 		specie: "fire",
 		height: 17,
 		weight: 980,
-		id: 1054,
+		id: 10149,
 	},
 	{
 		name: "ribombee-totem",
@@ -8430,7 +8430,7 @@ export const data = [
 		specie: "bug",
 		height: 4,
 		weight: 20,
-		id: 1055,
+		id: 10150,
 	},
 	{
 		name: "rockruff-own-tempo",
@@ -8438,7 +8438,7 @@ export const data = [
 		specie: "rock",
 		height: 5,
 		weight: 92,
-		id: 1056,
+		id: 10151,
 	},
 	{
 		name: "lycanroc-dusk",
@@ -8446,7 +8446,7 @@ export const data = [
 		specie: "rock",
 		height: 8,
 		weight: 250,
-		id: 1057,
+		id: 10152,
 	},
 	{
 		name: "araquanid-totem",
@@ -8454,7 +8454,7 @@ export const data = [
 		specie: "water",
 		height: 31,
 		weight: 2175,
-		id: 1058,
+		id: 10153,
 	},
 	{
 		name: "togedemaru-totem",
@@ -8462,7 +8462,7 @@ export const data = [
 		specie: "electric",
 		height: 6,
 		weight: 130,
-		id: 1059,
+		id: 10154,
 	},
 	{
 		name: "necrozma-dusk",
@@ -8470,7 +8470,7 @@ export const data = [
 		specie: "psychic",
 		height: 38,
 		weight: 4600,
-		id: 1060,
+		id: 10155,
 	},
 	{
 		name: "necrozma-dawn",
@@ -8478,7 +8478,7 @@ export const data = [
 		specie: "psychic",
 		height: 42,
 		weight: 3500,
-		id: 1061,
+		id: 10156,
 	},
 	{
 		name: "necrozma-ultra",
@@ -8486,7 +8486,7 @@ export const data = [
 		specie: "psychic",
 		height: 75,
 		weight: 2300,
-		id: 1062,
+		id: 10157,
 	},
 	{
 		name: "pikachu-starter",
@@ -8494,7 +8494,7 @@ export const data = [
 		specie: "electric",
 		height: 4,
 		weight: 60,
-		id: 1063,
+		id: 10158,
 	},
 	{
 		name: "eevee-starter",
@@ -8502,7 +8502,7 @@ export const data = [
 		specie: "normal",
 		height: 3,
 		weight: 65,
-		id: 1064,
+		id: 10159,
 	},
 	{
 		name: "pikachu-world-cap",
@@ -8510,7 +8510,7 @@ export const data = [
 		specie: "electric",
 		height: 4,
 		weight: 60,
-		id: 1065,
+		id: 10160,
 	},
 	{
 		name: "meowth-galar",
@@ -8518,7 +8518,7 @@ export const data = [
 		specie: "steel",
 		height: 4,
 		weight: 75,
-		id: 1066,
+		id: 10161,
 	},
 	{
 		name: "ponyta-galar",
@@ -8526,7 +8526,7 @@ export const data = [
 		specie: "psychic",
 		height: 8,
 		weight: 240,
-		id: 1067,
+		id: 10162,
 	},
 	{
 		name: "rapidash-galar",
@@ -8534,7 +8534,7 @@ export const data = [
 		specie: "psychic",
 		height: 17,
 		weight: 800,
-		id: 1068,
+		id: 10163,
 	},
 	{
 		name: "slowpoke-galar",
@@ -8542,7 +8542,7 @@ export const data = [
 		specie: "psychic",
 		height: 12,
 		weight: 360,
-		id: 1069,
+		id: 10164,
 	},
 	{
 		name: "slowbro-galar",
@@ -8550,7 +8550,7 @@ export const data = [
 		specie: "poison",
 		height: 16,
 		weight: 705,
-		id: 1070,
+		id: 10165,
 	},
 	{
 		name: "farfetchd-galar",
@@ -8558,7 +8558,7 @@ export const data = [
 		specie: "fighting",
 		height: 8,
 		weight: 420,
-		id: 1071,
+		id: 10166,
 	},
 	{
 		name: "weezing-galar",
@@ -8566,7 +8566,7 @@ export const data = [
 		specie: "poison",
 		height: 30,
 		weight: 160,
-		id: 1072,
+		id: 10167,
 	},
 	{
 		name: "mr-mime-galar",
@@ -8574,7 +8574,7 @@ export const data = [
 		specie: "ice",
 		height: 14,
 		weight: 568,
-		id: 1073,
+		id: 10168,
 	},
 	{
 		name: "articuno-galar",
@@ -8582,7 +8582,7 @@ export const data = [
 		specie: "psychic",
 		height: 17,
 		weight: 509,
-		id: 1074,
+		id: 10169,
 	},
 	{
 		name: "zapdos-galar",
@@ -8590,7 +8590,7 @@ export const data = [
 		specie: "fighting",
 		height: 16,
 		weight: 582,
-		id: 1075,
+		id: 10170,
 	},
 	{
 		name: "moltres-galar",
@@ -8598,7 +8598,7 @@ export const data = [
 		specie: "dark",
 		height: 20,
 		weight: 660,
-		id: 1076,
+		id: 10171,
 	},
 	{
 		name: "slowking-galar",
@@ -8606,7 +8606,7 @@ export const data = [
 		specie: "poison",
 		height: 18,
 		weight: 795,
-		id: 1077,
+		id: 10172,
 	},
 	{
 		name: "corsola-galar",
@@ -8614,7 +8614,7 @@ export const data = [
 		specie: "ghost",
 		height: 6,
 		weight: 5,
-		id: 1078,
+		id: 10173,
 	},
 	{
 		name: "zigzagoon-galar",
@@ -8622,7 +8622,7 @@ export const data = [
 		specie: "dark",
 		height: 4,
 		weight: 175,
-		id: 1079,
+		id: 10174,
 	},
 	{
 		name: "linoone-galar",
@@ -8630,7 +8630,7 @@ export const data = [
 		specie: "dark",
 		height: 5,
 		weight: 325,
-		id: 1080,
+		id: 10175,
 	},
 	{
 		name: "darumaka-galar",
@@ -8638,7 +8638,7 @@ export const data = [
 		specie: "ice",
 		height: 7,
 		weight: 400,
-		id: 1081,
+		id: 10176,
 	},
 	{
 		name: "darmanitan-galar-standard",
@@ -8646,7 +8646,7 @@ export const data = [
 		specie: "ice",
 		height: 17,
 		weight: 1200,
-		id: 1082,
+		id: 10177,
 	},
 	{
 		name: "darmanitan-galar-zen",
@@ -8654,7 +8654,7 @@ export const data = [
 		specie: "ice",
 		height: 17,
 		weight: 1200,
-		id: 1083,
+		id: 10178,
 	},
 	{
 		name: "yamask-galar",
@@ -8662,7 +8662,7 @@ export const data = [
 		specie: "ground",
 		height: 5,
 		weight: 15,
-		id: 1084,
+		id: 10179,
 	},
 	{
 		name: "stunfisk-galar",
@@ -8670,7 +8670,7 @@ export const data = [
 		specie: "ground",
 		height: 7,
 		weight: 205,
-		id: 1085,
+		id: 10180,
 	},
 	{
 		name: "zygarde-10",
@@ -8678,7 +8678,7 @@ export const data = [
 		specie: "dragon",
 		height: 12,
 		weight: 335,
-		id: 1086,
+		id: 10181,
 	},
 	{
 		name: "cramorant-gulping",
@@ -8686,7 +8686,7 @@ export const data = [
 		specie: "flying",
 		height: 8,
 		weight: 180,
-		id: 1087,
+		id: 10182,
 	},
 	{
 		name: "cramorant-gorging",
@@ -8694,7 +8694,7 @@ export const data = [
 		specie: "flying",
 		height: 8,
 		weight: 180,
-		id: 1088,
+		id: 10183,
 	},
 	{
 		name: "toxtricity-low-key",
@@ -8702,7 +8702,7 @@ export const data = [
 		specie: "electric",
 		height: 16,
 		weight: 400,
-		id: 1089,
+		id: 10184,
 	},
 	{
 		name: "eiscue-noice",
@@ -8710,7 +8710,7 @@ export const data = [
 		specie: "ice",
 		height: 14,
 		weight: 890,
-		id: 1090,
+		id: 10185,
 	},
 	{
 		name: "indeedee-female",
@@ -8718,7 +8718,7 @@ export const data = [
 		specie: "psychic",
 		height: 9,
 		weight: 280,
-		id: 1091,
+		id: 10186,
 	},
 	{
 		name: "morpeko-hangry",
@@ -8726,7 +8726,7 @@ export const data = [
 		specie: "electric",
 		height: 3,
 		weight: 30,
-		id: 1092,
+		id: 10187,
 	},
 	{
 		name: "zacian-crowned",
@@ -8734,7 +8734,7 @@ export const data = [
 		specie: "fairy",
 		height: 28,
 		weight: 3550,
-		id: 1093,
+		id: 10188,
 	},
 	{
 		name: "zamazenta-crowned",
@@ -8742,7 +8742,7 @@ export const data = [
 		specie: "fighting",
 		height: 29,
 		weight: 7850,
-		id: 1094,
+		id: 10189,
 	},
 	{
 		name: "eternatus-eternamax",
@@ -8750,7 +8750,7 @@ export const data = [
 		specie: "poison",
 		height: 1000,
 		weight: 0,
-		id: 1095,
+		id: 10190,
 	},
 	{
 		name: "urshifu-rapid-strike",
@@ -8758,7 +8758,7 @@ export const data = [
 		specie: "fighting",
 		height: 19,
 		weight: 1050,
-		id: 1096,
+		id: 10191,
 	},
 	{
 		name: "zarude-dada",
@@ -8766,7 +8766,7 @@ export const data = [
 		specie: "dark",
 		height: 18,
 		weight: 700,
-		id: 1097,
+		id: 10192,
 	},
 	{
 		name: "calyrex-ice",
@@ -8774,7 +8774,7 @@ export const data = [
 		specie: "psychic",
 		height: 24,
 		weight: 8091,
-		id: 1098,
+		id: 10193,
 	},
 	{
 		name: "calyrex-shadow",
@@ -8782,7 +8782,7 @@ export const data = [
 		specie: "psychic",
 		height: 24,
 		weight: 536,
-		id: 1099,
+		id: 10194,
 	},
 	{
 		name: "venusaur-gmax",
@@ -8790,7 +8790,7 @@ export const data = [
 		specie: "grass",
 		height: 240,
 		weight: 10000,
-		id: 1100,
+		id: 10195,
 	},
 	{
 		name: "charizard-gmax",
@@ -8798,7 +8798,7 @@ export const data = [
 		specie: "fire",
 		height: 280,
 		weight: 10000,
-		id: 1101,
+		id: 10196,
 	},
 	{
 		name: "blastoise-gmax",
@@ -8806,7 +8806,7 @@ export const data = [
 		specie: "water",
 		height: 250,
 		weight: 10000,
-		id: 1102,
+		id: 10197,
 	},
 	{
 		name: "butterfree-gmax",
@@ -8814,7 +8814,7 @@ export const data = [
 		specie: "bug",
 		height: 170,
 		weight: 10000,
-		id: 1103,
+		id: 10198,
 	},
 	{
 		name: "pikachu-gmax",
@@ -8822,7 +8822,7 @@ export const data = [
 		specie: "electric",
 		height: 210,
 		weight: 10000,
-		id: 1104,
+		id: 10199,
 	},
 	{
 		name: "meowth-gmax",
@@ -8830,7 +8830,7 @@ export const data = [
 		specie: "normal",
 		height: 330,
 		weight: 10000,
-		id: 1105,
+		id: 10200,
 	},
 	{
 		name: "machamp-gmax",
@@ -8838,7 +8838,7 @@ export const data = [
 		specie: "fighting",
 		height: 250,
 		weight: 10000,
-		id: 1106,
+		id: 10201,
 	},
 	{
 		name: "gengar-gmax",
@@ -8846,7 +8846,7 @@ export const data = [
 		specie: "ghost",
 		height: 200,
 		weight: 10000,
-		id: 1107,
+		id: 10202,
 	},
 	{
 		name: "kingler-gmax",
@@ -8854,7 +8854,7 @@ export const data = [
 		specie: "water",
 		height: 190,
 		weight: 10000,
-		id: 1108,
+		id: 10203,
 	},
 	{
 		name: "lapras-gmax",
@@ -8862,7 +8862,7 @@ export const data = [
 		specie: "water",
 		height: 240,
 		weight: 10000,
-		id: 1109,
+		id: 10204,
 	},
 	{
 		name: "eevee-gmax",
@@ -8870,7 +8870,7 @@ export const data = [
 		specie: "normal",
 		height: 180,
 		weight: 10000,
-		id: 1110,
+		id: 10205,
 	},
 	{
 		name: "snorlax-gmax",
@@ -8878,7 +8878,7 @@ export const data = [
 		specie: "normal",
 		height: 350,
 		weight: 10000,
-		id: 1111,
+		id: 10206,
 	},
 	{
 		name: "garbodor-gmax",
@@ -8886,7 +8886,7 @@ export const data = [
 		specie: "poison",
 		height: 210,
 		weight: 10000,
-		id: 1112,
+		id: 10207,
 	},
 	{
 		name: "melmetal-gmax",
@@ -8894,7 +8894,7 @@ export const data = [
 		specie: "steel",
 		height: 250,
 		weight: 10000,
-		id: 1113,
+		id: 10208,
 	},
 	{
 		name: "rillaboom-gmax",
@@ -8902,7 +8902,7 @@ export const data = [
 		specie: "grass",
 		height: 280,
 		weight: 10000,
-		id: 1114,
+		id: 10209,
 	},
 	{
 		name: "cinderace-gmax",
@@ -8910,7 +8910,7 @@ export const data = [
 		specie: "fire",
 		height: 270,
 		weight: 10000,
-		id: 1115,
+		id: 10210,
 	},
 	{
 		name: "inteleon-gmax",
@@ -8918,7 +8918,7 @@ export const data = [
 		specie: "water",
 		height: 400,
 		weight: 10000,
-		id: 1116,
+		id: 10211,
 	},
 	{
 		name: "corviknight-gmax",
@@ -8926,7 +8926,7 @@ export const data = [
 		specie: "flying",
 		height: 140,
 		weight: 10000,
-		id: 1117,
+		id: 10212,
 	},
 	{
 		name: "orbeetle-gmax",
@@ -8934,7 +8934,7 @@ export const data = [
 		specie: "bug",
 		height: 140,
 		weight: 10000,
-		id: 1118,
+		id: 10213,
 	},
 	{
 		name: "drednaw-gmax",
@@ -8942,7 +8942,7 @@ export const data = [
 		specie: "water",
 		height: 240,
 		weight: 10000,
-		id: 1119,
+		id: 10214,
 	},
 	{
 		name: "coalossal-gmax",
@@ -8950,7 +8950,7 @@ export const data = [
 		specie: "rock",
 		height: 420,
 		weight: 10000,
-		id: 1120,
+		id: 10215,
 	},
 	{
 		name: "flapple-gmax",
@@ -8958,7 +8958,7 @@ export const data = [
 		specie: "grass",
 		height: 240,
 		weight: 10000,
-		id: 1121,
+		id: 10216,
 	},
 	{
 		name: "appletun-gmax",
@@ -8966,7 +8966,7 @@ export const data = [
 		specie: "grass",
 		height: 240,
 		weight: 10000,
-		id: 1122,
+		id: 10217,
 	},
 	{
 		name: "sandaconda-gmax",
@@ -8974,7 +8974,7 @@ export const data = [
 		specie: "ground",
 		height: 220,
 		weight: 10000,
-		id: 1123,
+		id: 10218,
 	},
 	{
 		name: "toxtricity-amped-gmax",
@@ -8982,7 +8982,7 @@ export const data = [
 		specie: "electric",
 		height: 240,
 		weight: 10000,
-		id: 1124,
+		id: 10219,
 	},
 	{
 		name: "centiskorch-gmax",
@@ -8990,7 +8990,7 @@ export const data = [
 		specie: "fire",
 		height: 750,
 		weight: 10000,
-		id: 1125,
+		id: 10220,
 	},
 	{
 		name: "hatterene-gmax",
@@ -8998,7 +8998,7 @@ export const data = [
 		specie: "psychic",
 		height: 260,
 		weight: 10000,
-		id: 1126,
+		id: 10221,
 	},
 	{
 		name: "grimmsnarl-gmax",
@@ -9006,7 +9006,7 @@ export const data = [
 		specie: "dark",
 		height: 320,
 		weight: 10000,
-		id: 1127,
+		id: 10222,
 	},
 	{
 		name: "alcremie-gmax",
@@ -9014,7 +9014,7 @@ export const data = [
 		specie: "fairy",
 		height: 300,
 		weight: 10000,
-		id: 1128,
+		id: 10223,
 	},
 	{
 		name: "copperajah-gmax",
@@ -9022,7 +9022,7 @@ export const data = [
 		specie: "steel",
 		height: 230,
 		weight: 10000,
-		id: 1129,
+		id: 10224,
 	},
 	{
 		name: "duraludon-gmax",
@@ -9030,7 +9030,7 @@ export const data = [
 		specie: "steel",
 		height: 430,
 		weight: 10000,
-		id: 1130,
+		id: 10225,
 	},
 	{
 		name: "urshifu-single-strike-gmax",
@@ -9038,7 +9038,7 @@ export const data = [
 		specie: "fighting",
 		height: 290,
 		weight: 10000,
-		id: 1131,
+		id: 10226,
 	},
 	{
 		name: "urshifu-rapid-strike-gmax",
@@ -9046,7 +9046,7 @@ export const data = [
 		specie: "fighting",
 		height: 260,
 		weight: 10000,
-		id: 1132,
+		id: 10227,
 	},
 	{
 		name: "toxtricity-low-key-gmax",
@@ -9054,7 +9054,7 @@ export const data = [
 		specie: "electric",
 		height: 240,
 		weight: 10000,
-		id: 1133,
+		id: 10228,
 	},
 	{
 		name: "growlithe-hisui",
@@ -9062,7 +9062,7 @@ export const data = [
 		specie: "fire",
 		height: 8,
 		weight: 227,
-		id: 1134,
+		id: 10229,
 	},
 	{
 		name: "arcanine-hisui",
@@ -9070,7 +9070,7 @@ export const data = [
 		specie: "fire",
 		height: 20,
 		weight: 1680,
-		id: 1135,
+		id: 10230,
 	},
 	{
 		name: "voltorb-hisui",
@@ -9078,7 +9078,7 @@ export const data = [
 		specie: "electric",
 		height: 5,
 		weight: 130,
-		id: 1136,
+		id: 10231,
 	},
 	{
 		name: "electrode-hisui",
@@ -9086,7 +9086,7 @@ export const data = [
 		specie: "electric",
 		height: 12,
 		weight: 710,
-		id: 1137,
+		id: 10232,
 	},
 	{
 		name: "typhlosion-hisui",
@@ -9094,7 +9094,7 @@ export const data = [
 		specie: "fire",
 		height: 16,
 		weight: 698,
-		id: 1138,
+		id: 10233,
 	},
 	{
 		name: "qwilfish-hisui",
@@ -9102,7 +9102,7 @@ export const data = [
 		specie: "dark",
 		height: 5,
 		weight: 39,
-		id: 1139,
+		id: 10234,
 	},
 	{
 		name: "sneasel-hisui",
@@ -9110,7 +9110,7 @@ export const data = [
 		specie: "fighting",
 		height: 9,
 		weight: 270,
-		id: 1140,
+		id: 10235,
 	},
 	{
 		name: "samurott-hisui",
@@ -9118,7 +9118,7 @@ export const data = [
 		specie: "water",
 		height: 15,
 		weight: 582,
-		id: 1141,
+		id: 10236,
 	},
 	{
 		name: "lilligant-hisui",
@@ -9126,7 +9126,7 @@ export const data = [
 		specie: "grass",
 		height: 12,
 		weight: 192,
-		id: 1142,
+		id: 10237,
 	},
 	{
 		name: "zorua-hisui",
@@ -9134,7 +9134,7 @@ export const data = [
 		specie: "normal",
 		height: 7,
 		weight: 125,
-		id: 1143,
+		id: 10238,
 	},
 	{
 		name: "zoroark-hisui",
@@ -9142,7 +9142,7 @@ export const data = [
 		specie: "normal",
 		height: 16,
 		weight: 730,
-		id: 1144,
+		id: 10239,
 	},
 	{
 		name: "braviary-hisui",
@@ -9150,7 +9150,7 @@ export const data = [
 		specie: "psychic",
 		height: 17,
 		weight: 434,
-		id: 1145,
+		id: 10240,
 	},
 	{
 		name: "sliggoo-hisui",
@@ -9158,7 +9158,7 @@ export const data = [
 		specie: "steel",
 		height: 7,
 		weight: 685,
-		id: 1146,
+		id: 10241,
 	},
 	{
 		name: "goodra-hisui",
@@ -9166,7 +9166,7 @@ export const data = [
 		specie: "steel",
 		height: 17,
 		weight: 3341,
-		id: 1147,
+		id: 10242,
 	},
 	{
 		name: "avalugg-hisui",
@@ -9174,7 +9174,7 @@ export const data = [
 		specie: "ice",
 		height: 14,
 		weight: 2624,
-		id: 1148,
+		id: 10243,
 	},
 	{
 		name: "decidueye-hisui",
@@ -9182,7 +9182,7 @@ export const data = [
 		specie: "grass",
 		height: 16,
 		weight: 370,
-		id: 1149,
+		id: 10244,
 	},
 	{
 		name: "dialga-origin",
@@ -9190,7 +9190,7 @@ export const data = [
 		specie: "steel",
 		height: 70,
 		weight: 8487,
-		id: 1150,
+		id: 10245,
 	},
 	{
 		name: "palkia-origin",
@@ -9198,7 +9198,7 @@ export const data = [
 		specie: "water",
 		height: 63,
 		weight: 6590,
-		id: 1151,
+		id: 10246,
 	},
 	{
 		name: "basculin-white-striped",
@@ -9206,7 +9206,7 @@ export const data = [
 		specie: "water",
 		height: 10,
 		weight: 180,
-		id: 1152,
+		id: 10247,
 	},
 	{
 		name: "basculegion-female",
@@ -9214,7 +9214,7 @@ export const data = [
 		specie: "water",
 		height: 30,
 		weight: 1100,
-		id: 1153,
+		id: 10248,
 	},
 	{
 		name: "enamorus-therian",
@@ -9222,6 +9222,6 @@ export const data = [
 		specie: "fairy",
 		height: 16,
 		weight: 480,
-		id: 1154,
+		id: 10249,
 	},
 ];

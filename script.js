@@ -9,20 +9,19 @@ axios
 	.then((res) => res.data)
 	.then(async (data) => {
 		let promises = [];
-		let pokemons = [...data.results].map((pok, i) => {
-			pok.id = i + 1;
-			return pok;
-		});
+		let pokemons = [...data.results];
+		// .map((pok, i) => {
+		// 	pok.id = i + 1;
+		// 	return pok;
+		// });
 		while (pokemons.length) {
 			console.log(pokemons.length);
 
 			promises.push(
 				...(await Promise.all(
 					pokemons
-						.splice(0, 100)
-						.map((pok) =>
-							axios.get(pok.url).then((res) => parseData(res.data, pok.id))
-						)
+						.splice(0, 50)
+						.map((pok) => axios.get(pok.url).then((res) => parseData(res.data)))
 				))
 			);
 		}
@@ -42,14 +41,14 @@ axios
 // 		)))
 // }
 
-function parseData(data, index) {
+function parseData(data) {
 	let p = {
 		name: data.name,
 		img: data?.sprites?.front_default || "",
 		specie: data.types[0].type.name || "",
 		height: Number(data.height) || 0,
 		weight: Number(data.weight) || 0,
-		id: index,
+		id: data.id,
 	};
 	return p;
 }

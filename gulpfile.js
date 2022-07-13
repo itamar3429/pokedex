@@ -3,7 +3,7 @@ const clean = require('gulp-clean');
 const rename = require('gulp-rename');
 const webpack = require('webpack-stream');
 const sass = require('gulp-sass')(require('sass'));
-const browserSync = require('browser-sync').create();
+// const browserSync = require('browser-sync').create();
 const {
   exec,
   execSync,

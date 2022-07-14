@@ -18,30 +18,48 @@ class Module {
 
 	// Searches by input on input change
 	addInputListener() {
-		document.getElementById("search-form")?.addEventListener("submit", (e) => {
-			e.preventDefault();
-		});
+		let input = document.getElementById("search-input") as HTMLInputElement;
+		document
+			.getElementById("search-form")
+			?.addEventListener("submit", (e) => {
+				e.preventDefault();
+				let value = input.value;
+				if (value) {
+					Data.getPokemonByName(value, 50, 1)
+						.then((data) => {
+							this.render(data, false);
+						})
+						.catch(console.log);
+				} else {
+					Data.getPokemonList(50, 1)
+						.then((data) => {
+							this.render(data, false);
+						})
+						.catch(console.log);
+				}
+				this.page = 1;
+			});
 
 		// add input listener to load matching pokemons on input writing.
-		let input = document.getElementById("search-input") as HTMLInputElement;
-		input.addEventListener("input", (e) => {
-			e.preventDefault();
-			let value = input.value;
-			if (value) {
-				Data.getPokemonByName(value, 50, 1)
-					.then((data) => {
-						this.render(data, false);
-					})
-					.catch(console.log);
-			} else {
-				Data.getPokemonList(50, 1)
-					.then((data) => {
-						this.render(data, false);
-					})
-					.catch(console.log);
-			}
-			this.page = 1;
-		});
+		if (false)
+			input.addEventListener("input", (e) => {
+				e.preventDefault();
+				let value = input.value;
+				if (value) {
+					Data.getPokemonByName(value, 50, 1)
+						.then((data) => {
+							this.render(data, false);
+						})
+						.catch(console.log);
+				} else {
+					Data.getPokemonList(50, 1)
+						.then((data) => {
+							this.render(data, false);
+						})
+						.catch(console.log);
+				}
+				this.page = 1;
+			});
 	}
 
 	// gets a list of pokemons data and renders them to the page
@@ -57,7 +75,10 @@ class Module {
 		window.addEventListener("scroll", () => {
 			var st = window.pageYOffset || document.documentElement.scrollTop;
 			if (st > lastScrollTop)
-				if (window.innerHeight + window.scrollY >= document.body.scrollHeight) {
+				if (
+					window.innerHeight + window.scrollY >=
+					document.body.scrollHeight
+				) {
 					if (time) {
 						this.loader(true);
 						time = 0;

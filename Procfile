@@ -1,1 +1,1 @@
-web: npm run production
+web: printenv | grep mongo && npm run production

@@ -1,8 +1,9 @@
-import { MongoClient, Collection } from "mongodb";
+import { MongoClient, Collection, ObjectId } from "mongodb";
 
 import { IPokemon } from "../public/js/Data";
-const uri =
-	"mongodb+srv://Cyber4s:ilovecode@trymongo.rz12m.mongodb.net/?retryWrites=true&w=majority";
+const uri = process.env.MONGO_DB_URL as string;
+console.log(uri);
+
 export const client = new MongoClient(uri);
 
 export async function create() {
@@ -18,6 +19,13 @@ export function connect(dbName: string, collectionName: string) {
 export async function getPokemonsRange(from: number = 0, limit: number = 50) {
 	let pokemos = connect("pokedex", "pokemons");
 	let response = await pokemos.find().skip(from).limit(limit).toArray();
+	let count = await pokemos.countDocuments();
+	return { pokemons: response, count };
+}
+
+export async function getPokemonById(id: string) {
+	let pokemos = connect("pokedex", "pokemons");
+	let response = await pokemos.findOne({ _id: new ObjectId(id) });
 	return response;
 }
 
@@ -26,12 +34,14 @@ export async function getPokemonsByName(
 	from: number = 0,
 	limit: number = 50
 ) {
-	let pokemos = connect("pokedex", "pokemons");
-	let response = await pokemos
-		.find({ name: new RegExp(`^${name}.*`, "i") })
+	let pokemons = connect("pokedex", "pokemons");
+	let response = await pokemons
+		.find({ name: new RegExp(`^(${name}).*`, "i") })
 		.skip(from)
 		.limit(limit)
 		.toArray();
-	let count = await pokemos.count({ name: new RegExp(`^${name}.*`, "i") });
+	let count = await pokemons.countDocuments({
+		name: new RegExp(`^${name}.*`, "i"),
+	});
 	return { response, count };
 }

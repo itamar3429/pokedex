@@ -15,7 +15,7 @@ class Pokemon {
 		})()`;
 
 		div.innerHTML = `
-		<h3 class="name">${pokemon.name}</h3>
+		<h3 class="name">${pokemon.name.replace("/", " /")}</h3>
 		<div class="img">
 			<img src="${pokemon.img[0] || "/img/default.png"}" alt="${
 			pokemon.name

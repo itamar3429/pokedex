@@ -87,10 +87,8 @@ class Module {
 
 						pokemonList
 							.then((data) => {
-								setTimeout(() => {
-									this.render(data, true);
-									this.loader(false);
-								}, 500);
+								this.render(data, true);
+								this.loader(false);
 							})
 							.catch(console.log);
 					} else time = 1;

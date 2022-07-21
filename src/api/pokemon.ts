@@ -3,10 +3,12 @@ import {
 	getPokemonById,
 	getPokemonsByName,
 	getPokemonsRange,
-} from "../db/mongo";
+	// connect as mongoConnect,
+} from "../db/sql";
 
 export const pokApiRouter = express.Router();
 
+// mongoConnect();
 pokApiRouter.get("/pokemons", async (req, res) => {
 	let offset = Number(req.query.offset) || 0;
 	let limit = Number(req.query.limit) || 50;
@@ -62,7 +64,7 @@ pokApiRouter.get("/pokemons/name/:name", async (req, res) => {
 			offset,
 			limit
 		);
-		let pokemons = response.response;
+		let pokemons = response.pokemons;
 		let count = response.count;
 
 		let next =

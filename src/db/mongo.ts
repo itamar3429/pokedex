@@ -6,26 +6,26 @@ console.log(uri);
 
 export const client = new MongoClient(uri);
 
-export async function create() {
+export async function connect() {
 	await client.connect();
 }
 
-export function connect(dbName: string, collectionName: string) {
+export function getCollection(dbName: string, collectionName: string) {
 	const db = client.db(dbName);
 	const collection: Collection<IPokemon> = db.collection(collectionName);
 	return collection;
 }
 
 export async function getPokemonsRange(from: number = 0, limit: number = 50) {
-	let pokemos = connect("pokedex", "pokemons");
-	let response = await pokemos.find().skip(from).limit(limit).toArray();
-	let count = await pokemos.countDocuments();
+	let pokemons = getCollection("pokedex", "pokemons");
+	let response = await pokemons.find().skip(from).limit(limit).toArray();
+	let count = await pokemons.countDocuments();
 	return { pokemons: response, count };
 }
 
 export async function getPokemonById(id: string) {
-	let pokemos = connect("pokedex", "pokemons");
-	let response = await pokemos.findOne({ _id: new ObjectId(id) });
+	let pokemons = getCollection("pokedex", "pokemons");
+	let response = await pokemons.findOne({ _id: new ObjectId(id) });
 	return response;
 }
 
@@ -34,7 +34,7 @@ export async function getPokemonsByName(
 	from: number = 0,
 	limit: number = 50
 ) {
-	let pokemons = connect("pokedex", "pokemons");
+	let pokemons = getCollection("pokedex", "pokemons");
 	let response = await pokemons
 		.find({ name: new RegExp(`^(${name}).*`, "i") })
 		.skip(from)
@@ -43,5 +43,5 @@ export async function getPokemonsByName(
 	let count = await pokemons.countDocuments({
 		name: new RegExp(`^${name}.*`, "i"),
 	});
-	return { response, count };
+	return { pokemons: response, count };
 }

@@ -22,7 +22,7 @@ class Pokemon {
 		} pokemon" onerror="${onerror}">
 		</div>
 		<div class="info">
-			<p class="type"><span>specie: </span><span class="${pokemon.specie}">${
+			<p class="type"><span>type: </span><span class="${pokemon.specie}">${
 			pokemon.specie
 		}</span></p>
 			<p class="height"><span>height: </span>${pokemon.height}</p>

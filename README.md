@@ -4,11 +4,11 @@ pokedex project itamar cohen
 
 # dev
 
-to run in developer mode exec `npm run dev`
+to run in developer mode run `npm run dev`
 
 # start
 
-to start server exec `npm start`
+to start server run `npm start`
 
 # deploy
 

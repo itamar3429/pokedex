@@ -19,7 +19,7 @@ if you have a heroku app you can change to name of the app in deploy.sh
 # initialize
 
 before starting the app you need to initialize to psql db.
-to do that. you need to run `node scriptSql.js`
+to do that. you need to run `node scripts/scriptSql.js`
 make sure to update your personal postgres link where its needed
 make sure to add `DATABASE_URL` to your env file in the correct format
 (postgresql db)

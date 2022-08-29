@@ -1,4 +1,4 @@
-const data = require("./dist/data").data;
+const data = require("../dist/data").data;
 const { Pool } = require("pg");
 const { FALSE } = require("sass");
 

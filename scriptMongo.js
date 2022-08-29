@@ -3,7 +3,7 @@ const { MongoClient } = require("mongodb");
 const data = require("./dist/data").data;
 
 let url =
-	"mongodb+srv://Cyber4s:ilovecode@trymongo.rz12m.mongodb.net/?retryWrites=true&w=majority";
+	"mongodb+srv://{username}:{password}@{host}/?retryWrites=true&w=majority";
 
 let client = new MongoClient(url);
 

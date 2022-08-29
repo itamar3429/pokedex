@@ -5,7 +5,7 @@ const { FALSE } = require("sass");
 let pool = new Pool({
 	connectionString:
 		process.env.DATABASE_URL ||
-		"postgres://ufarwpzezyplhp:30568712cd4a8c6c8ed489684abe4d0098583dbe78a72f827ad4171cdea80532@ec2-34-239-241-121.compute-1.amazonaws.com:5432/d6qge2he8a9mlt",
+		"postgres://{username}:{password}@{host}:{port}/{database}",
 	ssl: {
 		rejectUnauthorized: false,
 	},
@@ -60,7 +60,6 @@ function combinePokemons(pok1, pok2) {
 	};
 	return pokemon;
 }
-run();
 
 async function query(queryString = "", queryParams = []) {
 	return pool.query(queryString, queryParams);
@@ -115,3 +114,4 @@ function insertPokArr(pokArr = []) {
 	]);
 	return query(queryStr, params.flat());
 }
+run();

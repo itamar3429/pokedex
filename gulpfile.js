@@ -69,9 +69,12 @@ gulp.task("tsc-w", () => {
 });
 
 // start nodemon
-gulp.task("nodemon", () => {
-	exec("nodemon dist/server.js");
-	exec("google-chrome http://localhost:3000");
+gulp.task("nodemon", (cb) => {
+	const nodemon = exec("nodemon dist/server.js", cb);
+	nodemon.stdout.on("data", console.log);
+	nodemon.stdout.on("error", console.log);
+	nodemon.stderr.on("data", console.log);
+	nodemon.stderr.on("error", console.log);
 });
 
 gulp.task("build", gulp.series("start", "scss", "static", "tsc", "webpack"));
@@ -85,8 +88,8 @@ gulp.task(
 			"watch-scss",
 			"watch-static",
 			"watch-js",
-			"tsc-w"
-			// 'nodemon',
+			"tsc-w",
+			"nodemon"
 		)
 	)
 );
